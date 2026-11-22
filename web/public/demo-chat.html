@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zalo Web (demo) - MoMo Guardian</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { font-family: "Segoe UI", Roboto, Arial, sans-serif; background: #e9ebee; color: #081c36; display: flex; flex-direction: column; }
+  .demo-note { background: #fff7e0; color: #7a5b00; font-size: 13px; text-align: center; padding: 6px 12px; border-bottom: 1px solid #f1dc9b; }
+  .app { flex: 1; display: flex; min-height: 0; }
+  .rail { width: 64px; background: #0068ff; display: flex; flex-direction: column; align-items: center; padding-top: 16px; gap: 18px; color: #fff; }
+  .rail .me { width: 40px; height: 40px; border-radius: 50%; background: #5aa2ff; display: flex; align-items: center; justify-content: center; font-weight: 700; border: 2px solid #fff; }
+  .rail .ico { width: 28px; height: 28px; border-radius: 8px; background: rgba(255,255,255,.25); }
+  .rail .ico.on { background: rgba(255,255,255,.55); }
+  .list { width: 320px; background: #fff; border-right: 1px solid #dfe2e7; display: flex; flex-direction: column; min-height: 0; }
+  .search { margin: 12px; padding: 8px 12px; background: #eaedf0; border-radius: 6px; font-size: 14px; color: #5a6981; }
+  .convs { overflow-y: auto; flex: 1; }
+  .conv { display: flex; gap: 12px; padding: 12px 14px; cursor: pointer; align-items: center; border: 0; background: transparent; width: 100%; text-align: left; font: inherit; color: inherit; }
+  .conv:hover { background: #f3f5f6; }
+  .conv.active { background: #e5efff; }
+  .avatar { width: 48px; height: 48px; border-radius: 50%; color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
+  .conv .meta { min-width: 0; flex: 1; }
+  .conv .name { font-weight: 600; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .conv .preview { font-size: 13px; color: #5a6981; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .conv .time { font-size: 12px; color: #7589a3; align-self: flex-start; }
+  .chat { flex: 1; display: flex; flex-direction: column; min-width: 0; background: #dfe7f1; }
+  .chat-head { background: #fff; padding: 12px 18px; border-bottom: 1px solid #dfe2e7; display: flex; align-items: center; gap: 12px; }
+  .chat-head .avatar { width: 40px; height: 40px; font-size: 16px; }
+  .chat-head .title { font-weight: 600; font-size: 16px; }
+  .chat-head .sub { font-size: 12px; color: #7589a3; }
+  .messages { flex: 1; overflow-y: auto; padding: 18px 24px; display: flex; flex-direction: column; gap: 8px; }
+  .day { align-self: center; background: rgba(8,28,54,.35); color: #fff; font-size: 12px; padding: 2px 10px; border-radius: 10px; margin: 6px 0; }
+  .row { display: flex; gap: 8px; align-items: flex-end; max-width: 78%; }
+  .row.in { align-self: flex-start; }
+  .row.out { align-self: flex-end; flex-direction: row-reverse; }
+  .row .avatar { width: 32px; height: 32px; font-size: 13px; }
+  .bubble { padding: 8px 12px; border-radius: 8px; font-size: 15px; line-height: 1.45; background: #fff; box-shadow: 0 1px 1px rgba(0,0,0,.08); white-space: pre-wrap; word-break: break-word; }
+  .row.out .bubble { background: #cfe3ff; }
+  .bubble .t { user-select: none; -webkit-user-select: none; display: block; font-size: 11px; color: #7589a3; margin-top: 4px; }
+  .composer { background: #fff; border-top: 1px solid #dfe2e7; padding: 10px 16px; display: flex; gap: 10px; align-items: center; }
+  .composer input { flex: 1; padding: 10px 12px; border: 1px solid #dfe2e7; border-radius: 6px; font: inherit; font-size: 14px; }
+  .composer .send { border: 0; background: #0068ff; color: #fff; font: inherit; font-size: 14px; font-weight: 600; padding: 9px 16px; border-radius: 6px; }
+  .conv .preview.unread { color: #081c36; font-weight: 600; }
+  .sim { border: 0; background: #0068ff; color: #fff; font: inherit; font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 6px; cursor: pointer; margin-left: 10px; }
+  .sim:hover { background: #0053cc; }
+  .hint { font-size: 12px; color: #5a6981; padding: 6px 18px 10px; background: #fff; }
+  @media (max-width: 760px) { .list { width: 200px; } .rail { display: none; } }
+</style>
+</head>
+<body>
+<div class="demo-note">Trang chat giả để trình diễn MoMo Guardian. Không phải Zalo thật, không có dữ liệu thật.</div>
+<div class="app">
+  <nav class="rail" aria-hidden="true">
+    <div class="me">B</div>
+    <div class="ico on"></div><div class="ico"></div><div class="ico"></div>
+  </nav>
+  <aside class="list" aria-label="Danh sách cuộc trò chuyện">
+    <div class="search">Tìm kiếm</div>
+    <div class="convs" id="convs"></div>
+  </aside>
+  <main class="chat">
+    <header class="chat-head">
+      <div class="avatar" id="head-avatar"></div>
+      <div><div class="title" id="head-title"></div><div class="sub" id="head-sub"></div></div>
+    </header>
+    <div class="messages" id="messages" role="log" aria-live="polite" aria-label="Tin nhắn"></div>
+    <div class="hint">Mẹo: bôi đen một tin nhắn rồi bấm bong bóng MoMo Guardian hoặc nhấn Alt+G. Để thử Tự động bảo vệ, bật công tắc dưới bong bóng rồi bấm
+      <button type="button" class="sim" id="simulate">Mô phỏng tin nhắn mới</button></div>
+    <div class="composer"><input type="text" id="composer-input" placeholder="Nhập tin nhắn…" autocomplete="off" /><button type="button" class="send">Gửi</button></div>
+  </main>
+</div>
+<script>
+  // Conversations. Texts for T01, T07 and A01 are copied from fixtures/scenarios/*.json.
+  var CONVERSATIONS = [
+    {
+      id: "T01", name: "Công an Quận 1", sub: "Người lạ · vừa truy cập", color: "#d9534f", initials: "CA", time: "09:12",
+      preview: "Tin nhắn mới",
+      messages: [
+        { who: "in", time: "09:10", text: "Chào anh/chị, tôi là cán bộ điều tra, cần làm việc với anh/chị ngay." },
+        { who: "in", time: "09:12", text: "Đây là Công an quận 1, tài khoản VNeID của bạn liên quan đường dây rửa tiền, chuyển 50tr vào stk 1903777888999 TCB để xác minh, không được nói với ai" }
+      ]
+    },
+    {
+      id: "T07", name: "Shipper Giao Hàng", sub: "Người lạ", color: "#f0ad4e", initials: "SH", time: "08:40",
+      preview: "Tin nhắn mới",
+      messages: [
+        { who: "out", time: "08:31", text: "Đơn của mình bao giờ tới vậy shop?" },
+        { who: "in", time: "08:40", text: "Shipper đây, đơn bị lỗi cần thu hồi, chuyển khoản trước 35k phí ship lại" }
+      ]
+    },
+    {
+      id: "A01", name: "Minh (bạn thân)", sub: "Bạn bè · đang hoạt động", color: "#5cb85c", initials: "M", time: "Hôm qua",
+      preview: "Tin nhắn mới",
+      messages: [
+        { who: "in", time: "12:05", text: "Trưa nay ăn cơm tấm nha, vui lắm." },
+        { who: "out", time: "12:06", text: "Ok, mình ra liền." },
+        { who: "in", time: "13:20", text: "ck t 2 lít vào stk 0123456789 VCB nha, tiền cơm" }
+      ]
+    }
+  ];
+
+  var convsEl = document.getElementById("convs");
+  var messagesEl = document.getElementById("messages");
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+
+  function renderList(activeId) {
+    convsEl.textContent = "";
+    CONVERSATIONS.forEach(function (c) {
+      var b = el("button", "conv" + (c.id === activeId ? " active" : ""));
+      b.type = "button";
+      b.setAttribute("data-conversation", c.id);
+      var av = el("div", "avatar", c.initials); av.style.background = c.color;
+      var meta = el("div", "meta");
+      meta.appendChild(el("div", "name", c.name));
+      var last = c.messages[c.messages.length - 1];
+      meta.appendChild(el("div", "preview" + (c.id !== activeId ? " unread" : ""), (last.who === "out" ? "Bạn: " : "") + last.text));
+      b.appendChild(av); b.appendChild(meta); b.appendChild(el("div", "time", c.time));
+      b.addEventListener("click", function () { show(c.id); });
+      convsEl.appendChild(b);
+    });
+  }
+
+  function renderMessage(c, m) {
+    var row = el("div", "row " + m.who);
+    if (m.who === "in") {
+      var a = el("div", "avatar", c.initials); a.style.background = c.color; row.appendChild(a);
+    }
+    var bub = el("div", "bubble", m.text);
+    bub.appendChild(el("span", "t", m.time));
+    row.appendChild(bub);
+    messagesEl.appendChild(row);
+  }
+  var currentId = null;
+  // New incoming messages for the "Tự động bảo vệ" demo: one scam-like, one ordinary.
+  var SIMULATED = [
+    { who: "in", text: "Chuyển gấp cho em __AMT__ đi chị, em vừa mới đổi tài khoản nên chuyển vào tài khoản này nhé : 0378582085 tpbank" },
+    { who: "in", text: "Mà chiều nay chị rảnh thì qua chơi nha, em mới mua bánh ngon lắm" }
+  ];
+  var AMOUNTS = ["100k", "200k", "150k", "300k"];
+  var simCount = 0;
+  function simulateIncoming() {
+    var c = CONVERSATIONS.filter(function (x) { return x.id === currentId; })[0];
+    if (!c) return;
+    var amount = AMOUNTS[simCount % AMOUNTS.length];
+    simCount++;
+    var now = new Date();
+    var time = ("0" + now.getHours()).slice(-2) + ":" + ("0" + now.getMinutes()).slice(-2);
+    SIMULATED.forEach(function (s, i) {
+      // Small stagger so the page looks like messages arriving one by one.
+      setTimeout(function () {
+        var m = { who: s.who, time: time, text: s.text.replace("__AMT__", amount) };
+        c.messages.push(m);
+        renderMessage(c, m);
+        renderList(currentId);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      }, i * 700);
+    });
+  }
+  document.getElementById("simulate").addEventListener("click", simulateIncoming);
+  function show(id) {
+    var c = CONVERSATIONS.filter(function (x) { return x.id === id; })[0];
+    currentId = id;
+    renderList(id);
+    var av = document.getElementById("head-avatar");
+    av.textContent = c.initials; av.style.background = c.color;
+    document.getElementById("head-title").textContent = c.name;
+    document.getElementById("head-sub").textContent = c.sub;
+    messagesEl.textContent = "";
+    messagesEl.appendChild(el("div", "day", "Hôm nay"));
+    c.messages.forEach(function (m) { renderMessage(c, m); });
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    if (history.replaceState) history.replaceState(null, "", "#" + id);
+  }
+
+  var start = (location.hash || "").replace("#", "");
+  show(CONVERSATIONS.some(function (c) { return c.id === start; }) ? start : "T01");
+</script>
+</body>
+</html>

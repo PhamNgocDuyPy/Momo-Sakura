@@ -1,0 +1,89 @@
+{
+  "id": "A14",
+  "title_vi": "Người quen đổi tài khoản, nhờ chuyển gấp",
+  "description_vi": "F1: tin nhắn giả làm người quen báo vừa đổi tài khoản và nhờ chuyển gấp. MockLLM chỉ là luật từ khóa nên nhận ra cụm đổi tài khoản; kết quả SOFT_FRICTION (không HARD vì HARD cần nguồn tất định theo Req 15.7) với RC_ACCOUNT_SWAP_REQUEST, thời gian suy nghĩ 30 giây và câu hỏi System 2 gọi điện qua số cũ.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Chuyển gấp cho em 100k đi chị, em vừa mới đổi tài khoản nên chuyển vào tài khoản này nhé : 0378582085 tpbank"
+        }
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_ACCOUNT_SWAP_REQUEST"
+        ],
+        "assert": [
+          {
+            "path": "verdict.cooling_off_seconds",
+            "op": "eq",
+            "value": 30
+          },
+          {
+            "path": "verdict.system2_check_questions",
+            "op": "contains",
+            "value": "Bạn đã gọi điện hoặc gọi video cho người này qua số điện thoại cũ để xác minh chưa?"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Chị ơi em bị hack nick cũ, chuyển giúp em 500k vào stk mới 0912345678 MB nhé"
+        }
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_ACCOUNT_SWAP_REQUEST"
+        ],
+        "assert": [
+          {
+            "path": "verdict.system2_check_questions",
+            "op": "contains",
+            "value": "Bạn đã gọi điện hoặc gọi video cho người này qua số điện thoại cũ để xác minh chưa?"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Anh chuyển qua tài khoản này giúp em nhé, tài khoản cũ em bị khóa rồi: 1234567890 VCB"
+        }
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_ACCOUNT_SWAP_REQUEST"
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Em mượn tạm tài khoản bạn em, anh gửi 2tr vào số tài khoản khác này nhé 0371234567 ACB"
+        }
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_ACCOUNT_SWAP_REQUEST"
+        ]
+      }
+    }
+  ]
+}

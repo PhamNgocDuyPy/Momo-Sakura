@@ -1,0 +1,25 @@
+{
+  "id": "T07",
+  "title_vi": "Shipper giả thu hồi đơn",
+  "description_vi": "Shipper giả đòi phí.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Shipper đây, đơn bị lỗi cần thu hồi, chuyển khoản trước 35k phí ship lại"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_FAKE_SHIPPER_RECALL"
+        ]
+      }
+    }
+  ]
+}

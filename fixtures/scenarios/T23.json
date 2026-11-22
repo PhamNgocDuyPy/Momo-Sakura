@@ -1,0 +1,33 @@
+{
+  "id": "T23",
+  "title_vi": "Chia nhỏ giao dịch (Thông tư 50)",
+  "description_vi": "9.800.000 cộng 19.600.000 trong 24 giờ.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970415",
+        "account_number": "1029384756",
+        "amount_vnd": 9800000
+      },
+      "expect": {
+        "decision_tier": {
+          "min": "SOFT_FRICTION"
+        },
+        "reason_codes_include": [
+          "RC_CIRCULAR50_STRUCTURING_RISK"
+        ],
+        "assert": [
+          {
+            "path": "verdict.cooling_off_seconds",
+            "op": "eq",
+            "value": 30
+          }
+        ]
+      }
+    }
+  ]
+}

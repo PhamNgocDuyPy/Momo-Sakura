@@ -1,0 +1,25 @@
+{
+  "id": "T10",
+  "title_vi": "Việc làm online đòi phí mở khóa",
+  "description_vi": "Lừa làm nhiệm vụ.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Việc làm online thả tim nhận hoa hồng, nạp phí mở khóa 300k"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_TASK_SCAM_UNLOCK_FEE"
+        ]
+      }
+    }
+  ]
+}

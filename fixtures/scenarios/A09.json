@@ -1,0 +1,39 @@
+{
+  "id": "A09",
+  "title_vi": "Khuyến mãi giả đòi phí",
+  "description_vi": "F5: giả MoMo báo trúng iPhone và đòi phí vận chuyển nên bị giữ.",
+  "group": "assistant",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Chúc mừng bạn trúng iPhone 15 từ MoMo, chuyển phí vận chuyển 300k để nhận quà"
+        },
+        "mode": "PROMO"
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_BRAND_IMPERSONATION_MOMO",
+          "RC_FAKE_PROMO_REFUND"
+        ],
+        "assert": [
+          {
+            "path": "extensions.promo.matched",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "path": "ui_hints.show_transfer_now",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    }
+  ]
+}

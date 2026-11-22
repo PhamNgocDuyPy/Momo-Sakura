@@ -1,0 +1,25 @@
+{
+  "id": "T12",
+  "title_vi": "Hoàn tiền giả sàn TMĐT",
+  "description_vi": "Hoàn tiền giả.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Shopee hoàn tiền đơn lỗi, nộp phí xác minh 99k tại shopee-hoantien.xyz"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_FAKE_PROMO_REFUND"
+        ]
+      }
+    }
+  ]
+}

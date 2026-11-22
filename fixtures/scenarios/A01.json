@@ -1,0 +1,70 @@
+{
+  "id": "A01",
+  "title_vi": "Dán tin nhắn chuyển tiền rồi kiểm tra Flow A",
+  "description_vi": "F1: dán 'ck t 2 lít ... VCB nha, tiền cơm' vào Flow B, điền sẵn giao dịch, rồi chạy Flow A với prefill.",
+  "group": "assistant",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "ck t 2 lít vào stk 0123456789 VCB nha, tiền cơm"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "reason_codes_include": [
+          "RC_NO_SCAM_SIGNAL_FOUND"
+        ],
+        "trace_tools_subset_of_allowlist": true,
+        "assert": [
+          {
+            "path": "prefill.bank_bin",
+            "op": "eq",
+            "value": "970436"
+          },
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          },
+          {
+            "path": "prefill.amount_vnd",
+            "op": "eq",
+            "value": 200000
+          },
+          {
+            "path": "prefill.memo",
+            "op": "eq",
+            "value": "tiền cơm"
+          },
+          {
+            "path": "ui_hints.show_transfer_now",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "{{prev.prefill.bank_bin}}",
+        "account_number": "{{prev.prefill.account_number}}",
+        "amount_vnd": "{{prev.prefill.amount_vnd}}",
+        "memo": "{{prev.prefill.memo}}",
+        "source_integrity": "{{prev.prefill.source_integrity_for_flow_a}}"
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "reason_codes_include": [
+          "RC_TRUSTED_PAYEE_HISTORY"
+        ],
+        "trace_tools_subset_of_allowlist": true
+      }
+    }
+  ]
+}

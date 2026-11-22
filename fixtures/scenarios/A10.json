@@ -1,0 +1,43 @@
+{
+  "id": "A10",
+  "title_vi": "Giá quá rẻ kèm đặt cọc",
+  "description_vi": "F4: iPhone 15 Pro Max giá 9tr (rẻ hơn 64% giá tham chiếu) và đòi cọc trước.",
+  "group": "assistant",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Thanh lý iPhone 15 Pro Max 256GB giá 9tr, cọc trước 2tr giữ hàng"
+        },
+        "mode": "SHOP"
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_PRICE_TOO_GOOD_TO_BE_TRUE"
+        ],
+        "assert": [
+          {
+            "path": "extensions.listing.discount_percent",
+            "op": "eq",
+            "value": 64
+          },
+          {
+            "path": "extensions.listing.reference_price_vnd",
+            "op": "eq",
+            "value": 25000000
+          },
+          {
+            "path": "ui_hints.safe_payment_tips",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    }
+  ]
+}

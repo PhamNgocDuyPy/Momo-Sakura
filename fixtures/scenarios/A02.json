@@ -1,0 +1,130 @@
+{
+  "id": "A02",
+  "title_vi": "Tiếng lóng số tiền khi dán tin chuyển khoản",
+  "description_vi": "F1: năm cách viết số tiền (xị, củ, 1tr5, k, 1.5tr) cho cùng một tài khoản; prefill.amount_vnd phải đúng.",
+  "group": "assistant",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "ck 5 xị stk 0123456789 VCB"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "assert": [
+          {
+            "path": "prefill.amount_vnd",
+            "op": "eq",
+            "value": 500000
+          },
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "ck 1 củ stk 0123456789 VCB"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "assert": [
+          {
+            "path": "prefill.amount_vnd",
+            "op": "eq",
+            "value": 1000000
+          },
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "ck 1tr5 stk 0123456789 VCB"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "assert": [
+          {
+            "path": "prefill.amount_vnd",
+            "op": "eq",
+            "value": 1500000
+          },
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "ck 200k stk 0123456789 VCB"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "assert": [
+          {
+            "path": "prefill.amount_vnd",
+            "op": "eq",
+            "value": 200000
+          },
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "ck 1.5tr stk 0123456789 VCB"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "assert": [
+          {
+            "path": "prefill.amount_vnd",
+            "op": "eq",
+            "value": 1500000
+          },
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          }
+        ]
+      }
+    }
+  ]
+}

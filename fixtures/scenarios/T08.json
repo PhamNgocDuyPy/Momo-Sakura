@@ -1,0 +1,40 @@
+{
+  "id": "T08",
+  "title_vi": "Đặt cọc C2C có hối thúc",
+  "description_vi": "(a) Không SIMO: SOFT. (b) Tài khoản SIMO: HARD.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Cọc trước 500k giữ hàng, gấp vì nhiều người hỏi"
+        }
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_C2C_DEPOSIT_URGENCY"
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Cọc trước 500k giữ hàng, gấp vì nhiều người hỏi, stk 0909123456 MB"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_SIMO_OR_MULE_HIGH_RISK"
+        ]
+      }
+    }
+  ]
+}

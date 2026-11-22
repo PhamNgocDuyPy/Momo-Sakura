@@ -1,0 +1,25 @@
+{
+  "id": "T06",
+  "title_vi": "Chia sẻ màn hình / điều khiển từ xa",
+  "description_vi": "Yêu cầu app điều khiển từ xa.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Nhân viên MoMo hỗ trợ hoàn tiền, bạn cài AnyDesk và chia sẻ màn hình nhé"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_REMOTE_SCREEN_TAKEOVER"
+        ]
+      }
+    }
+  ]
+}

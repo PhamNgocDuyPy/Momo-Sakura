@@ -1,0 +1,16 @@
+{
+  "defaults": {"simo_hit": false, "gnn_mule_score": 0.05, "fan_in_senders_per_hour": 0, "account_age_days": 365, "has_history": false, "total_24h_vnd": 0},
+  "accounts": [
+    {"bank_bin": "970436", "account_number": "0123456789", "napas_name": "NGUYEN VAN MINH", "simo_hit": false, "gnn_mule_score": 0.05, "fan_in_senders_per_hour": 0, "account_age_days": 2100, "has_history": true, "total_24h_vnd": 0},
+    {"bank_bin": "970436", "account_number": "1012345678", "napas_name": "TRAN THI HOA", "simo_hit": false, "gnn_mule_score": 0.03, "fan_in_senders_per_hour": 1, "account_age_days": 1500, "has_history": true, "total_24h_vnd": 0},
+    {"bank_bin": "970415", "account_number": "1029384756", "napas_name": "PHAM QUOC HUNG", "simo_hit": false, "gnn_mule_score": 0.10, "fan_in_senders_per_hour": 0, "account_age_days": 900, "has_history": true, "total_24h_vnd": 19600000},
+    {"bank_bin": "970422", "account_number": "0909123456", "napas_name": "DO VAN TUAN", "simo_hit": true, "gnn_mule_score": 0.40, "fan_in_senders_per_hour": 2, "account_age_days": 200, "has_history": false, "total_24h_vnd": 0},
+    {"bank_bin": "970407", "account_number": "19033344455501", "napas_name": "LY THI MAI", "simo_hit": false, "gnn_mule_score": 0.91, "fan_in_senders_per_hour": 20, "account_age_days": 5, "has_history": false, "total_24h_vnd": 0},
+    {"bank_bin": "970407", "account_number": "1903777888999", "napas_name": "HOANG VAN LONG", "simo_hit": false, "gnn_mule_score": 0.20, "fan_in_senders_per_hour": 0, "account_age_days": 400, "has_history": false, "total_24h_vnd": 0},
+    {"bank_bin": "970418", "account_number": "21410000123456", "napas_name": "VU THI THAO", "simo_hit": false, "gnn_mule_score": 0.04, "fan_in_senders_per_hour": 0, "account_age_days": 900, "has_history": false, "total_24h_vnd": 0},
+    {"bank_bin": "970432", "account_number": "123456789012", "napas_name": "NGO VAN KHOA", "simo_hit": false, "gnn_mule_score": 0.70, "fan_in_senders_per_hour": 1, "account_age_days": 60, "has_history": false, "total_24h_vnd": 0},
+    {"bank_bin": "970405", "account_number": "1500201234567", "napas_name": "CA PHE MOC", "simo_hit": false, "gnn_mule_score": 0.02, "fan_in_senders_per_hour": 3, "account_age_days": 3000, "has_history": true, "total_24h_vnd": 0},
+    {"bank_bin": "970423", "account_number": "00001234567", "napas_name": "LE QUOC BAO", "simo_hit": false, "gnn_mule_score": 0.01, "fan_in_senders_per_hour": 0, "account_age_days": 2500, "has_history": true, "total_24h_vnd": 0},
+    {"bank_bin": "970436", "account_number": "0071000999888", "napas_name": "DEMO USER", "simo_hit": false, "gnn_mule_score": 0.05, "fan_in_senders_per_hour": 0, "account_age_days": 365, "has_history": false, "total_24h_vnd": 0, "own_account": true}
+  ]
+}

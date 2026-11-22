@@ -1,0 +1,25 @@
+{
+  "id": "T11",
+  "title_vi": "Cam kết lãi cao",
+  "description_vi": "Đầu tư cam kết lãi.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Sàn đầu tư coin cam kết lãi 30% mỗi tháng, bao lỗ"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_GUARANTEED_RETURN_PIG_BUTCHERING"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "A04",
+  "title_vi": "Lệnh chuyển tiền, tên trùng",
+  "description_vi": "F2: 'gửi 5 xị cho Lan' khớp hai liên hệ nên trả AMBIGUOUS kèm số tiền.",
+  "group": "assistant",
+  "channel": "ASSISTANT",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/assistant/command",
+      "request": {
+        "text": "gửi 5 xị cho Lan"
+      },
+      "expect": {
+        "assert": [
+          {
+            "path": "result.status",
+            "op": "eq",
+            "value": "AMBIGUOUS"
+          },
+          {
+            "path": "result.candidates.0.display_name",
+            "op": "eq",
+            "value": "Trần Thị Lan"
+          },
+          {
+            "path": "result.candidates.1.display_name",
+            "op": "eq",
+            "value": "Phạm Ngọc Lan"
+          },
+          {
+            "path": "result.prefill.amount_vnd",
+            "op": "eq",
+            "value": 500000
+          },
+          {
+            "path": "result.candidates.2",
+            "op": "absent"
+          },
+          {
+            "path": "result.contact",
+            "op": "absent"
+          }
+        ]
+      }
+    }
+  ]
+}

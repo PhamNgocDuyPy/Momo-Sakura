@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="MoMo Guardian">
+  <rect width="512" height="512" rx="112" fill="#d82d8b"/>
+  <path d="M256 96 120 148v100c0 88 58 144 136 168 78-24 136-80 136-168V148z" fill="#fff"/>
+  <path d="m196 262 46 46 78-92" fill="none" stroke="#d82d8b" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

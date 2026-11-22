@@ -1,0 +1,25 @@
+{
+  "id": "T27",
+  "title_vi": "Memo độc hại không ảnh hưởng",
+  "description_vi": "Memo không bao giờ được luật đọc.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970423",
+        "account_number": "00001234567",
+        "amount_vnd": 200000,
+        "memo": "tiền chuộc con tin =))"
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "reason_codes_include": [
+          "RC_TRUSTED_PAYEE_HISTORY"
+        ]
+      }
+    }
+  ]
+}

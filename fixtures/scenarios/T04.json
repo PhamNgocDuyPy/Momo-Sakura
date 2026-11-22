@@ -1,0 +1,25 @@
+{
+  "id": "T04",
+  "title_vi": "Giả MoMo trao thưởng",
+  "description_vi": "Giả MoMo báo trúng thưởng.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "MoMo tri ân khách hàng, bạn trúng thưởng 10tr, chuyển phí nhận quà 500k"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_BRAND_IMPERSONATION_MOMO"
+        ]
+      }
+    }
+  ]
+}

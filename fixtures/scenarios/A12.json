@@ -1,0 +1,26 @@
+{
+  "id": "A12",
+  "title_vi": "Gói định kỳ sắp gia hạn và không dùng",
+  "description_vi": "Netflix gia hạn sau 3 ngày; YouTube (10 ngày) không cảnh báo; Spotify không dùng 45 ngày.",
+  "group": "assistant",
+  "channel": "WALLET_SUMMARY",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "GET /api/wallet/summary",
+      "request": {},
+      "expect": {
+        "assert": [
+          {"path": "alerts.1.type", "op": "eq", "value": "RENEWAL_SOON"},
+          {"path": "alerts.1.subscription_id", "op": "eq", "value": "sub_netflix"},
+          {"path": "alerts.1.days_left", "op": "eq", "value": 3},
+          {"path": "alerts.1.amount_vnd", "op": "eq", "value": 260000},
+          {"path": "alerts.2.type", "op": "eq", "value": "UNUSED_SUBSCRIPTION"},
+          {"path": "alerts.2.subscription_id", "op": "eq", "value": "sub_spotify"},
+          {"path": "alerts.2.days_since_last_use", "op": "eq", "value": 45},
+          {"path": "alerts.3", "op": "absent"}
+        ]
+      }
+    }
+  ]
+}

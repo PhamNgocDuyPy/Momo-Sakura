@@ -1,0 +1,42 @@
+{
+  "id": "T16",
+  "title_vi": "QR nước ngoài hoặc sai định dạng",
+  "description_vi": "(a) PromptPay; (b) Tag 54 không phải số nguyên.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970436",
+        "account_number": "1012345678",
+        "amount_vnd": 100000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T16a}}"
+      },
+      "expect": {
+        "decision_tier": {
+          "min": "SOFT_FRICTION"
+        },
+        "qr_result": "FOREIGN_OR_NON_VND"
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970436",
+        "account_number": "1012345678",
+        "amount_vnd": 150000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T16b}}"
+      },
+      "expect": {
+        "decision_tier": {
+          "min": "SOFT_FRICTION"
+        },
+        "qr_result": "INVALID_FORMAT"
+      }
+    }
+  ]
+}

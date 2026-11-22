@@ -1,0 +1,34 @@
+{
+  "id": "T14",
+  "title_vi": "QR bị sửa",
+  "description_vi": "Mã VietQR bị sửa nhưng giữ CRC cũ.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970436",
+        "account_number": "1012345678",
+        "amount_vnd": 150000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T14}}"
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_VIETQR_TAMPERED_BAD_CRC"
+        ],
+        "qr_result": "BAD_CRC",
+        "assert": [
+          {
+            "path": "latency_ms",
+            "op": "lt",
+            "value": 200
+          }
+        ]
+      }
+    }
+  ]
+}

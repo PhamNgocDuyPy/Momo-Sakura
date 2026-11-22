@@ -1,0 +1,25 @@
+{
+  "id": "T05",
+  "title_vi": "Người thân deepfake vay gấp",
+  "description_vi": "Người thân giả mạo nhờ chuyển gấp.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Mẹ ơi con bị tai nạn ở bệnh viện, chuyển gấp 20tr vào tk 1903777888999 TCB của bạn con"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_URGENT_THIRD_PARTY_ACCT"
+        ]
+      }
+    }
+  ]
+}

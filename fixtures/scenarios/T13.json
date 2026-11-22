@@ -1,0 +1,28 @@
+{
+  "id": "T13",
+  "title_vi": "QR hợp lệ, người nhận quen",
+  "description_vi": "QR VietQR hợp lệ tới người nhận đã có lịch sử.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970436",
+        "account_number": "1012345678",
+        "amount_vnd": 150000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T13}}"
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "reason_codes_include": [
+          "RC_TRUSTED_PAYEE_HISTORY"
+        ],
+        "qr_result": "VALID_VIETQR",
+        "trace_tools_subset_of_allowlist": true
+      }
+    }
+  ]
+}

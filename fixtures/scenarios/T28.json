@@ -1,0 +1,31 @@
+{
+  "id": "T28",
+  "title_vi": "QR merchant cũ thiếu 38.02",
+  "description_vi": "Mặc định QRIBFTTA.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970405",
+        "account_number": "1500201234567",
+        "amount_vnd": 45000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T28}}"
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "qr_result": "VALID_VIETQR",
+        "assert": [
+          {
+            "path": "qr.fields.service_code",
+            "op": "eq",
+            "value": "QRIBFTTA"
+          }
+        ]
+      }
+    }
+  ]
+}

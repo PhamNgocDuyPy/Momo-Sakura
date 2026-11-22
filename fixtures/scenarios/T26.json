@@ -1,0 +1,48 @@
+{
+  "id": "T26",
+  "title_vi": "Lộ CCCD và số điện thoại thô",
+  "description_vi": "(a) Che PII, ALLOW. (b) Redactor lỗi: chặn egress LLM.",
+  "group": "PII",
+  "channel": "FLOW_B",
+  "requires_debug": true,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Em gửi CCCD 079203001234 và sđt 0912345678 để làm hồ sơ"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "reason_codes_include": [
+          "RC_NO_SCAM_SIGNAL_FOUND"
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Em gửi CCCD 079203001234 và sđt 0912345678 để làm hồ sơ"
+        },
+        "debug": {
+          "simulate_redactor_failure": true
+        }
+      },
+      "expect": {
+        "decision_tier": {
+          "min": "SOFT_FRICTION"
+        },
+        "reason_codes_include": [
+          "RC_PII_EGRESS_BLOCKED"
+        ],
+        "stop_codes_include": [
+          "PII_EGRESS_BLOCKED"
+        ]
+      }
+    }
+  ]
+}

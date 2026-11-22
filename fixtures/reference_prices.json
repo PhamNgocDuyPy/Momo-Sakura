@@ -1,0 +1,5 @@
+[
+  {"product_key": "iphone_15_pro_max", "category": "PHONE", "reference_price_vnd": 25000000, "source_note": "Giá tham chiếu sandbox, không phải giá thị trường thực"},
+  {"product_key": "airpods_pro_2", "category": "HEADPHONES", "reference_price_vnd": 5500000, "source_note": "Giá tham chiếu sandbox, không phải giá thị trường thực"},
+  {"product_key": "ps5_slim", "category": "GAME_CONSOLE", "reference_price_vnd": 12000000, "source_note": "Giá tham chiếu sandbox, không phải giá thị trường thực"}
+]
