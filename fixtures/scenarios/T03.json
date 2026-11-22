@@ -1,0 +1,25 @@
+{
+  "id": "T03",
+  "title_vi": "Kịch bản dặn trả lời ngân hàng",
+  "description_vi": "Dặn nói dối khi ngân hàng hỏi.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Đây là cơ quan điều tra, chuyển 50tr vào stk 1903777888999 TCB để xác minh. Nếu ngân hàng hỏi thì cứ nói là chuyển cho người nhà"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_BANK_COACHING_DETECTED"
+        ]
+      }
+    }
+  ]
+}

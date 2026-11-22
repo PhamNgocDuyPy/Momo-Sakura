@@ -1,0 +1,83 @@
+{
+  "id": "A06",
+  "title_vi": "Chia hóa đơn không lệch 1 đồng",
+  "description_vi": "OCR hóa đơn lẩu 3 người (fixtures/receipts/lau_3_nguoi.txt), chia đều, và báo lệch tổng khi OCR sai.",
+  "group": "assistant",
+  "channel": "SPLIT",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "mode": "SPLIT_BILL",
+        "content": {
+          "origin": "OCR",
+          "text": "NHA HANG LAU THAI SEN\nLẩu thái 1 199.000\nTrà đá 3 5.000\nTổng cộng 214.000\n"
+        }
+      },
+      "expect": {
+        "assert": [
+          {"path": "extensions.receipt.items.0.name", "op": "eq", "value": "Lẩu thái"},
+          {"path": "extensions.receipt.items.1.quantity", "op": "eq", "value": 3},
+          {"path": "extensions.receipt.total_vnd", "op": "eq", "value": 214000},
+          {"path": "extensions.receipt.items_sum_vnd", "op": "eq", "value": 214000}
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/split/compute",
+      "request": {
+        "items": [
+          {"name": "Lẩu thái", "quantity": 1, "unit_price_vnd": 199000},
+          {"name": "Trà đá", "quantity": 3, "unit_price_vnd": 5000}
+        ],
+        "receipt_total_vnd": 214000,
+        "participants": [
+          {"id": "p1", "display_name": "Bạn"},
+          {"id": "p2", "display_name": "Minh"},
+          {"id": "p3", "display_name": "Lan"}
+        ],
+        "mode": "EQUAL",
+        "payee": "SELF",
+        "memo": "an lau"
+      },
+      "expect": {
+        "assert": [
+          {"path": "status", "op": "eq", "value": "OK"},
+          {"path": "total_vnd", "op": "eq", "value": 214000},
+          {"path": "shares.0.amount_vnd", "op": "eq", "value": 71334},
+          {"path": "shares.0.qr_status", "op": "eq", "value": "SKIPPED_PAYEE"},
+          {"path": "shares.1.amount_vnd", "op": "eq", "value": 71333},
+          {"path": "shares.1.qr_status", "op": "eq", "value": "VALID_VIETQR"},
+          {"path": "shares.2.amount_vnd", "op": "eq", "value": 71333},
+          {"path": "shares.2.qr_status", "op": "eq", "value": "VALID_VIETQR"}
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/split/compute",
+      "request": {
+        "items": [
+          {"name": "Lẩu thái", "quantity": 1, "unit_price_vnd": 199000},
+          {"name": "Trà đá", "quantity": 3, "unit_price_vnd": 5000}
+        ],
+        "receipt_total_vnd": 220000,
+        "participants": [
+          {"id": "p1", "display_name": "Bạn"},
+          {"id": "p2", "display_name": "Minh"},
+          {"id": "p3", "display_name": "Lan"}
+        ],
+        "mode": "EQUAL",
+        "payee": "SELF",
+        "memo": "an lau"
+      },
+      "expect": {
+        "assert": [
+          {"path": "status", "op": "eq", "value": "TOTAL_MISMATCH"},
+          {"path": "mismatch_vnd", "op": "eq", "value": 6000},
+          {"path": "shares", "op": "eq", "value": []}
+        ]
+      }
+    }
+  ]
+}

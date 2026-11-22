@@ -1,0 +1,74 @@
+{
+  "id": "A03",
+  "title_vi": "Lệnh chuyển tiền, liên hệ duy nhất",
+  "description_vi": "F2: 'chuyển 200k cho Minh tiền cà phê' khớp đúng một liên hệ, điền sẵn rồi chạy Flow A.",
+  "group": "assistant",
+  "channel": "ASSISTANT",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/assistant/command",
+      "request": {
+        "text": "chuyển 200k cho Minh tiền cà phê"
+      },
+      "expect": {
+        "assert": [
+          {
+            "path": "intent.intent",
+            "op": "eq",
+            "value": "TRANSFER"
+          },
+          {
+            "path": "result.type",
+            "op": "eq",
+            "value": "TRANSFER_RESOLUTION"
+          },
+          {
+            "path": "result.status",
+            "op": "eq",
+            "value": "RESOLVED"
+          },
+          {
+            "path": "result.contact.display_name",
+            "op": "eq",
+            "value": "Nguyễn Văn Minh"
+          },
+          {
+            "path": "result.prefill.amount_vnd",
+            "op": "eq",
+            "value": 200000
+          },
+          {
+            "path": "result.prefill.memo",
+            "op": "eq",
+            "value": "tiền cà phê"
+          },
+          {
+            "path": "result.prefill.source_integrity_for_flow_a",
+            "op": "eq",
+            "value": "USER_TYPED"
+          },
+          {
+            "path": "result.message_vi",
+            "op": "eq",
+            "value": "Đã điền sẵn giao dịch 200.000 đ cho Nguyễn Văn Minh. Bạn kiểm tra lại rồi xác nhận nhé."
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "{{prev.result.prefill.bank_bin}}",
+        "account_number": "{{prev.result.prefill.account_number}}",
+        "amount_vnd": "{{prev.result.prefill.amount_vnd}}",
+        "memo": "{{prev.result.prefill.memo}}",
+        "source_integrity": "{{prev.result.prefill.source_integrity_for_flow_a}}"
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "trace_tools_subset_of_allowlist": true
+      }
+    }
+  ]
+}

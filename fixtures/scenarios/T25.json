@@ -1,0 +1,36 @@
+{
+  "id": "T25",
+  "title_vi": "Tài khoản GNN cao",
+  "description_vi": "gnn 0.91, fan-in 20/giờ; phản hồi dưới 200 ms.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970407",
+        "account_number": "19033344455501",
+        "amount_vnd": 500000
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_SIMO_OR_MULE_HIGH_RISK"
+        ],
+        "assert": [
+          {
+            "path": "latency_ms",
+            "op": "lt",
+            "value": 200
+          },
+          {
+            "path": "verdict.allow_fast_unblock",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    }
+  ]
+}

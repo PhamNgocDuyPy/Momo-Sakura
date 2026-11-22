@@ -1,0 +1,3535 @@
+{
+ "as_of": "2026-11-30T20:00:00+07:00",
+ "transactions": [
+  {
+   "id": "tx_0001",
+   "at": "2026-09-01T07:20:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 155000
+  },
+  {
+   "id": "tx_0002",
+   "at": "2026-09-01T08:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 25000
+  },
+  {
+   "id": "tx_0003",
+   "at": "2026-09-01T16:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0004",
+   "at": "2026-09-01T20:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0005",
+   "at": "2026-09-01T22:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 500000
+  },
+  {
+   "id": "tx_0006",
+   "at": "2026-09-02T07:55:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 128000
+  },
+  {
+   "id": "tx_0007",
+   "at": "2026-09-02T08:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 71000
+  },
+  {
+   "id": "tx_0008",
+   "at": "2026-09-02T11:55:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 17000
+  },
+  {
+   "id": "tx_0009",
+   "at": "2026-09-02T13:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 91000
+  },
+  {
+   "id": "tx_0010",
+   "at": "2026-09-02T18:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0011",
+   "at": "2026-09-03T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "Netflix",
+   "amount_vnd": 260000
+  },
+  {
+   "id": "tx_0012",
+   "at": "2026-09-03T16:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0013",
+   "at": "2026-09-04T11:30:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Nhà thuốc Long Châu",
+   "amount_vnd": 114000
+  },
+  {
+   "id": "tx_0014",
+   "at": "2026-09-05T09:00:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Công ty Lương",
+   "amount_vnd": 15000000
+  },
+  {
+   "id": "tx_0015",
+   "at": "2026-09-05T10:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0016",
+   "at": "2026-09-05T10:20:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 261000
+  },
+  {
+   "id": "tx_0017",
+   "at": "2026-09-05T13:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 41000
+  },
+  {
+   "id": "tx_0018",
+   "at": "2026-09-05T13:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0019",
+   "at": "2026-09-05T16:00:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 32000
+  },
+  {
+   "id": "tx_0020",
+   "at": "2026-09-05T18:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 64000
+  },
+  {
+   "id": "tx_0021",
+   "at": "2026-09-05T22:00:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 124000
+  },
+  {
+   "id": "tx_0022",
+   "at": "2026-09-06T12:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 46000
+  },
+  {
+   "id": "tx_0023",
+   "at": "2026-09-06T15:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 60000
+  },
+  {
+   "id": "tx_0024",
+   "at": "2026-09-06T16:05:00+07:00",
+   "direction": "OUT",
+   "category": "EDUCATION",
+   "counterparty": "Udemy",
+   "amount_vnd": 299000
+  },
+  {
+   "id": "tx_0025",
+   "at": "2026-09-06T16:20:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 16000
+  },
+  {
+   "id": "tx_0026",
+   "at": "2026-09-07T08:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 32000
+  },
+  {
+   "id": "tx_0027",
+   "at": "2026-09-07T08:35:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Nguyễn Văn Minh",
+   "amount_vnd": 250000
+  },
+  {
+   "id": "tx_0028",
+   "at": "2026-09-07T12:55:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 173000
+  },
+  {
+   "id": "tx_0029",
+   "at": "2026-09-07T16:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 36000
+  },
+  {
+   "id": "tx_0030",
+   "at": "2026-09-07T18:20:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Mẹ",
+   "amount_vnd": 250000
+  },
+  {
+   "id": "tx_0031",
+   "at": "2026-09-07T20:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 48000
+  },
+  {
+   "id": "tx_0032",
+   "at": "2026-09-07T22:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 68000
+  },
+  {
+   "id": "tx_0033",
+   "at": "2026-09-08T07:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 39000
+  },
+  {
+   "id": "tx_0034",
+   "at": "2026-09-08T16:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "EVN TP.HCM",
+   "amount_vnd": 600000
+  },
+  {
+   "id": "tx_0035",
+   "at": "2026-09-09T09:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 81000
+  },
+  {
+   "id": "tx_0036",
+   "at": "2026-09-09T14:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 23000
+  },
+  {
+   "id": "tx_0037",
+   "at": "2026-09-09T15:10:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Steam",
+   "amount_vnd": 101000
+  },
+  {
+   "id": "tx_0038",
+   "at": "2026-09-09T20:50:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 36000
+  },
+  {
+   "id": "tx_0039",
+   "at": "2026-09-09T21:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 21000
+  },
+  {
+   "id": "tx_0040",
+   "at": "2026-09-09T21:20:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Lazada",
+   "amount_vnd": 159000
+  },
+  {
+   "id": "tx_0041",
+   "at": "2026-09-09T21:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 91000
+  },
+  {
+   "id": "tx_0042",
+   "at": "2026-09-09T22:40:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 30000
+  },
+  {
+   "id": "tx_0043",
+   "at": "2026-09-10T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "YouTube Premium",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0044",
+   "at": "2026-09-10T12:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 78000
+  },
+  {
+   "id": "tx_0045",
+   "at": "2026-09-10T13:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0046",
+   "at": "2026-09-10T21:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 58000
+  },
+  {
+   "id": "tx_0047",
+   "at": "2026-09-11T07:00:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Lotte Cinema",
+   "amount_vnd": 52000
+  },
+  {
+   "id": "tx_0048",
+   "at": "2026-09-11T07:15:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Karaoke Nice",
+   "amount_vnd": 68000
+  },
+  {
+   "id": "tx_0049",
+   "at": "2026-09-11T07:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 47000
+  },
+  {
+   "id": "tx_0050",
+   "at": "2026-09-11T21:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 67000
+  },
+  {
+   "id": "tx_0051",
+   "at": "2026-09-11T22:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0052",
+   "at": "2026-09-12T11:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0053",
+   "at": "2026-09-12T18:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "FPT Internet",
+   "amount_vnd": 220000
+  },
+  {
+   "id": "tx_0054",
+   "at": "2026-09-12T18:40:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 169000
+  },
+  {
+   "id": "tx_0055",
+   "at": "2026-09-12T21:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 46000
+  },
+  {
+   "id": "tx_0056",
+   "at": "2026-09-13T07:45:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 222000
+  },
+  {
+   "id": "tx_0057",
+   "at": "2026-09-13T15:50:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 30000
+  },
+  {
+   "id": "tx_0058",
+   "at": "2026-09-13T17:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 13000
+  },
+  {
+   "id": "tx_0059",
+   "at": "2026-09-13T22:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 17000
+  },
+  {
+   "id": "tx_0060",
+   "at": "2026-09-14T08:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Trần Thị Lan",
+   "amount_vnd": 500000
+  },
+  {
+   "id": "tx_0061",
+   "at": "2026-09-14T10:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 48000
+  },
+  {
+   "id": "tx_0062",
+   "at": "2026-09-14T12:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 88000
+  },
+  {
+   "id": "tx_0063",
+   "at": "2026-09-14T15:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 117000
+  },
+  {
+   "id": "tx_0064",
+   "at": "2026-09-14T17:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 21000
+  },
+  {
+   "id": "tx_0065",
+   "at": "2026-09-14T18:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 12000
+  },
+  {
+   "id": "tx_0066",
+   "at": "2026-09-14T20:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 65000
+  },
+  {
+   "id": "tx_0067",
+   "at": "2026-09-15T09:50:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 52000
+  },
+  {
+   "id": "tx_0068",
+   "at": "2026-09-15T10:40:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 39000
+  },
+  {
+   "id": "tx_0069",
+   "at": "2026-09-15T13:50:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Pharmacity",
+   "amount_vnd": 84000
+  },
+  {
+   "id": "tx_0070",
+   "at": "2026-09-15T17:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "Nạp tiền điện thoại",
+   "amount_vnd": 200000
+  },
+  {
+   "id": "tx_0071",
+   "at": "2026-09-15T22:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 44000
+  },
+  {
+   "id": "tx_0072",
+   "at": "2026-09-16T08:15:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 94000
+  },
+  {
+   "id": "tx_0073",
+   "at": "2026-09-16T11:40:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 41000
+  },
+  {
+   "id": "tx_0074",
+   "at": "2026-09-17T07:50:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0075",
+   "at": "2026-09-17T09:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 17000
+  },
+  {
+   "id": "tx_0076",
+   "at": "2026-09-17T15:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 33000
+  },
+  {
+   "id": "tx_0077",
+   "at": "2026-09-17T22:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 21000
+  },
+  {
+   "id": "tx_0078",
+   "at": "2026-09-17T22:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 74000
+  },
+  {
+   "id": "tx_0079",
+   "at": "2026-09-18T11:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Nguyễn Văn Minh",
+   "amount_vnd": 300000
+  },
+  {
+   "id": "tx_0080",
+   "at": "2026-09-18T11:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 41000
+  },
+  {
+   "id": "tx_0081",
+   "at": "2026-09-18T13:45:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Nhà thuốc Long Châu",
+   "amount_vnd": 102000
+  },
+  {
+   "id": "tx_0082",
+   "at": "2026-09-18T15:15:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 225000
+  },
+  {
+   "id": "tx_0083",
+   "at": "2026-09-18T15:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 149000
+  },
+  {
+   "id": "tx_0084",
+   "at": "2026-09-18T16:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 32000
+  },
+  {
+   "id": "tx_0085",
+   "at": "2026-09-18T19:55:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 35000
+  },
+  {
+   "id": "tx_0086",
+   "at": "2026-09-18T22:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 22000
+  },
+  {
+   "id": "tx_0087",
+   "at": "2026-09-18T22:55:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 215000
+  },
+  {
+   "id": "tx_0088",
+   "at": "2026-09-19T15:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 90000
+  },
+  {
+   "id": "tx_0089",
+   "at": "2026-09-19T20:40:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Karaoke Nice",
+   "amount_vnd": 131000
+  },
+  {
+   "id": "tx_0090",
+   "at": "2026-09-19T21:55:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Uniqlo",
+   "amount_vnd": 310000
+  },
+  {
+   "id": "tx_0091",
+   "at": "2026-09-20T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "Spotify",
+   "amount_vnd": 59000
+  },
+  {
+   "id": "tx_0092",
+   "at": "2026-09-20T08:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 27000
+  },
+  {
+   "id": "tx_0093",
+   "at": "2026-09-20T10:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 91000
+  },
+  {
+   "id": "tx_0094",
+   "at": "2026-09-20T13:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 48000
+  },
+  {
+   "id": "tx_0095",
+   "at": "2026-09-20T14:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 25000
+  },
+  {
+   "id": "tx_0096",
+   "at": "2026-09-20T22:20:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Mẹ",
+   "amount_vnd": 300000
+  },
+  {
+   "id": "tx_0097",
+   "at": "2026-09-21T09:10:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 122000
+  },
+  {
+   "id": "tx_0098",
+   "at": "2026-09-21T10:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0099",
+   "at": "2026-09-21T10:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 53000
+  },
+  {
+   "id": "tx_0100",
+   "at": "2026-09-21T10:55:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Steam",
+   "amount_vnd": 98000
+  },
+  {
+   "id": "tx_0101",
+   "at": "2026-09-21T15:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 97000
+  },
+  {
+   "id": "tx_0102",
+   "at": "2026-09-21T16:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 80000
+  },
+  {
+   "id": "tx_0103",
+   "at": "2026-09-21T17:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 65000
+  },
+  {
+   "id": "tx_0104",
+   "at": "2026-09-22T08:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 39000
+  },
+  {
+   "id": "tx_0105",
+   "at": "2026-09-22T09:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 77000
+  },
+  {
+   "id": "tx_0106",
+   "at": "2026-09-22T13:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 59000
+  },
+  {
+   "id": "tx_0107",
+   "at": "2026-09-22T17:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 300000
+  },
+  {
+   "id": "tx_0108",
+   "at": "2026-09-22T18:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 86000
+  },
+  {
+   "id": "tx_0109",
+   "at": "2026-09-22T20:30:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Shopee",
+   "amount_vnd": 192000
+  },
+  {
+   "id": "tx_0110",
+   "at": "2026-09-22T22:45:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 42000
+  },
+  {
+   "id": "tx_0111",
+   "at": "2026-09-22T22:55:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Lazada",
+   "amount_vnd": 131000
+  },
+  {
+   "id": "tx_0112",
+   "at": "2026-09-23T15:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 29000
+  },
+  {
+   "id": "tx_0113",
+   "at": "2026-09-23T17:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 47000
+  },
+  {
+   "id": "tx_0114",
+   "at": "2026-09-23T20:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 60000
+  },
+  {
+   "id": "tx_0115",
+   "at": "2026-09-24T07:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 19000
+  },
+  {
+   "id": "tx_0116",
+   "at": "2026-09-24T07:50:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 46000
+  },
+  {
+   "id": "tx_0117",
+   "at": "2026-09-24T13:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 71000
+  },
+  {
+   "id": "tx_0118",
+   "at": "2026-09-25T09:40:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0119",
+   "at": "2026-09-25T10:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0120",
+   "at": "2026-09-25T11:00:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 43000
+  },
+  {
+   "id": "tx_0121",
+   "at": "2026-09-25T18:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 40000
+  },
+  {
+   "id": "tx_0122",
+   "at": "2026-09-25T22:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 44000
+  },
+  {
+   "id": "tx_0123",
+   "at": "2026-09-26T12:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 91000
+  },
+  {
+   "id": "tx_0124",
+   "at": "2026-09-26T21:15:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 32000
+  },
+  {
+   "id": "tx_0125",
+   "at": "2026-09-27T15:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Mẹ",
+   "amount_vnd": 200000
+  },
+  {
+   "id": "tx_0126",
+   "at": "2026-09-27T18:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 25000
+  },
+  {
+   "id": "tx_0127",
+   "at": "2026-09-27T18:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0128",
+   "at": "2026-09-27T18:55:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 29000
+  },
+  {
+   "id": "tx_0129",
+   "at": "2026-09-27T20:00:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 100000
+  },
+  {
+   "id": "tx_0130",
+   "at": "2026-09-27T22:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 22000
+  },
+  {
+   "id": "tx_0131",
+   "at": "2026-09-28T10:55:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 42000
+  },
+  {
+   "id": "tx_0132",
+   "at": "2026-09-28T12:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 85000
+  },
+  {
+   "id": "tx_0133",
+   "at": "2026-09-28T15:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 78000
+  },
+  {
+   "id": "tx_0134",
+   "at": "2026-09-29T10:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 32000
+  },
+  {
+   "id": "tx_0135",
+   "at": "2026-09-29T10:50:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0136",
+   "at": "2026-09-29T22:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 50000
+  },
+  {
+   "id": "tx_0137",
+   "at": "2026-09-30T07:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 44000
+  },
+  {
+   "id": "tx_0138",
+   "at": "2026-09-30T18:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 15000
+  },
+  {
+   "id": "tx_0139",
+   "at": "2026-09-30T19:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 78000
+  },
+  {
+   "id": "tx_0140",
+   "at": "2026-09-30T22:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 17000
+  },
+  {
+   "id": "tx_0141",
+   "at": "2026-10-01T11:50:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 302000
+  },
+  {
+   "id": "tx_0142",
+   "at": "2026-10-01T11:55:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 49000
+  },
+  {
+   "id": "tx_0143",
+   "at": "2026-10-01T22:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 73000
+  },
+  {
+   "id": "tx_0144",
+   "at": "2026-10-02T07:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 28000
+  },
+  {
+   "id": "tx_0145",
+   "at": "2026-10-02T10:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 53000
+  },
+  {
+   "id": "tx_0146",
+   "at": "2026-10-02T15:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 67000
+  },
+  {
+   "id": "tx_0147",
+   "at": "2026-10-02T17:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 41000
+  },
+  {
+   "id": "tx_0148",
+   "at": "2026-10-03T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "Netflix",
+   "amount_vnd": 260000
+  },
+  {
+   "id": "tx_0149",
+   "at": "2026-10-03T12:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 62000
+  },
+  {
+   "id": "tx_0150",
+   "at": "2026-10-03T12:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 76000
+  },
+  {
+   "id": "tx_0151",
+   "at": "2026-10-03T12:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 97000
+  },
+  {
+   "id": "tx_0152",
+   "at": "2026-10-03T15:45:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Lazada",
+   "amount_vnd": 289000
+  },
+  {
+   "id": "tx_0153",
+   "at": "2026-10-04T09:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 49000
+  },
+  {
+   "id": "tx_0154",
+   "at": "2026-10-04T10:15:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 35000
+  },
+  {
+   "id": "tx_0155",
+   "at": "2026-10-04T14:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 192000
+  },
+  {
+   "id": "tx_0156",
+   "at": "2026-10-04T21:50:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 15000
+  },
+  {
+   "id": "tx_0157",
+   "at": "2026-10-05T07:50:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 165000
+  },
+  {
+   "id": "tx_0158",
+   "at": "2026-10-05T08:40:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0159",
+   "at": "2026-10-05T09:00:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Công ty Lương",
+   "amount_vnd": 15000000
+  },
+  {
+   "id": "tx_0160",
+   "at": "2026-10-05T17:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 84000
+  },
+  {
+   "id": "tx_0161",
+   "at": "2026-10-05T17:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 54000
+  },
+  {
+   "id": "tx_0162",
+   "at": "2026-10-05T20:20:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 162000
+  },
+  {
+   "id": "tx_0163",
+   "at": "2026-10-06T08:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 33000
+  },
+  {
+   "id": "tx_0164",
+   "at": "2026-10-06T08:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Mẹ",
+   "amount_vnd": 100000
+  },
+  {
+   "id": "tx_0165",
+   "at": "2026-10-06T12:00:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 41000
+  },
+  {
+   "id": "tx_0166",
+   "at": "2026-10-06T13:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 36000
+  },
+  {
+   "id": "tx_0167",
+   "at": "2026-10-06T13:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0168",
+   "at": "2026-10-06T18:45:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Steam",
+   "amount_vnd": 95000
+  },
+  {
+   "id": "tx_0169",
+   "at": "2026-10-06T21:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 67000
+  },
+  {
+   "id": "tx_0170",
+   "at": "2026-10-06T22:05:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 227000
+  },
+  {
+   "id": "tx_0171",
+   "at": "2026-10-07T12:40:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 28000
+  },
+  {
+   "id": "tx_0172",
+   "at": "2026-10-07T13:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Nguyễn Văn Minh",
+   "amount_vnd": 200000
+  },
+  {
+   "id": "tx_0173",
+   "at": "2026-10-07T18:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 52000
+  },
+  {
+   "id": "tx_0174",
+   "at": "2026-10-07T20:15:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 22000
+  },
+  {
+   "id": "tx_0175",
+   "at": "2026-10-08T10:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 80000
+  },
+  {
+   "id": "tx_0176",
+   "at": "2026-10-08T13:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "EVN TP.HCM",
+   "amount_vnd": 620000
+  },
+  {
+   "id": "tx_0177",
+   "at": "2026-10-08T14:55:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 40000
+  },
+  {
+   "id": "tx_0178",
+   "at": "2026-10-08T17:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 87000
+  },
+  {
+   "id": "tx_0179",
+   "at": "2026-10-08T19:10:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 193000
+  },
+  {
+   "id": "tx_0180",
+   "at": "2026-10-09T13:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 70000
+  },
+  {
+   "id": "tx_0181",
+   "at": "2026-10-09T16:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 38000
+  },
+  {
+   "id": "tx_0182",
+   "at": "2026-10-09T18:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 67000
+  },
+  {
+   "id": "tx_0183",
+   "at": "2026-10-09T18:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0184",
+   "at": "2026-10-09T19:20:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 100000
+  },
+  {
+   "id": "tx_0185",
+   "at": "2026-10-09T20:05:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Lazada",
+   "amount_vnd": 403000
+  },
+  {
+   "id": "tx_0186",
+   "at": "2026-10-10T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "YouTube Premium",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0187",
+   "at": "2026-10-10T18:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 46000
+  },
+  {
+   "id": "tx_0188",
+   "at": "2026-10-10T22:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 64000
+  },
+  {
+   "id": "tx_0189",
+   "at": "2026-10-11T12:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 33000
+  },
+  {
+   "id": "tx_0190",
+   "at": "2026-10-11T16:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 22000
+  },
+  {
+   "id": "tx_0191",
+   "at": "2026-10-11T18:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 101000
+  },
+  {
+   "id": "tx_0192",
+   "at": "2026-10-12T07:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 43000
+  },
+  {
+   "id": "tx_0193",
+   "at": "2026-10-12T07:30:00+07:00",
+   "direction": "OUT",
+   "category": "EDUCATION",
+   "counterparty": "Udemy",
+   "amount_vnd": 399000
+  },
+  {
+   "id": "tx_0194",
+   "at": "2026-10-12T07:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 24000
+  },
+  {
+   "id": "tx_0195",
+   "at": "2026-10-12T09:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 46000
+  },
+  {
+   "id": "tx_0196",
+   "at": "2026-10-12T09:35:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Shopee",
+   "amount_vnd": 497000
+  },
+  {
+   "id": "tx_0197",
+   "at": "2026-10-12T14:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 30000
+  },
+  {
+   "id": "tx_0198",
+   "at": "2026-10-12T20:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "FPT Internet",
+   "amount_vnd": 220000
+  },
+  {
+   "id": "tx_0199",
+   "at": "2026-10-12T20:55:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Phòng khám Vigor",
+   "amount_vnd": 134000
+  },
+  {
+   "id": "tx_0200",
+   "at": "2026-10-13T07:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 90000
+  },
+  {
+   "id": "tx_0201",
+   "at": "2026-10-13T15:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 33000
+  },
+  {
+   "id": "tx_0202",
+   "at": "2026-10-13T21:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 63000
+  },
+  {
+   "id": "tx_0203",
+   "at": "2026-10-14T10:30:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Lazada",
+   "amount_vnd": 147000
+  },
+  {
+   "id": "tx_0204",
+   "at": "2026-10-14T15:15:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Karaoke Nice",
+   "amount_vnd": 139000
+  },
+  {
+   "id": "tx_0205",
+   "at": "2026-10-15T08:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 72000
+  },
+  {
+   "id": "tx_0206",
+   "at": "2026-10-15T08:50:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Nguyễn Văn Minh",
+   "amount_vnd": 300000
+  },
+  {
+   "id": "tx_0207",
+   "at": "2026-10-15T10:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 35000
+  },
+  {
+   "id": "tx_0208",
+   "at": "2026-10-15T12:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "Nạp tiền điện thoại",
+   "amount_vnd": 200000
+  },
+  {
+   "id": "tx_0209",
+   "at": "2026-10-15T13:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 101000
+  },
+  {
+   "id": "tx_0210",
+   "at": "2026-10-15T16:10:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 236000
+  },
+  {
+   "id": "tx_0211",
+   "at": "2026-10-15T19:55:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Nhà thuốc Long Châu",
+   "amount_vnd": 180000
+  },
+  {
+   "id": "tx_0212",
+   "at": "2026-10-15T20:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 32000
+  },
+  {
+   "id": "tx_0213",
+   "at": "2026-10-15T20:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 47000
+  },
+  {
+   "id": "tx_0214",
+   "at": "2026-10-15T20:40:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 223000
+  },
+  {
+   "id": "tx_0215",
+   "at": "2026-10-15T21:20:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 64000
+  },
+  {
+   "id": "tx_0216",
+   "at": "2026-10-16T07:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 17000
+  },
+  {
+   "id": "tx_0217",
+   "at": "2026-10-16T09:15:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0218",
+   "at": "2026-10-16T12:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 52000
+  },
+  {
+   "id": "tx_0219",
+   "at": "2026-10-16T14:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 69000
+  },
+  {
+   "id": "tx_0220",
+   "at": "2026-10-16T19:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 61000
+  },
+  {
+   "id": "tx_0221",
+   "at": "2026-10-16T20:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 35000
+  },
+  {
+   "id": "tx_0222",
+   "at": "2026-10-16T21:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 43000
+  },
+  {
+   "id": "tx_0223",
+   "at": "2026-10-17T14:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 27000
+  },
+  {
+   "id": "tx_0224",
+   "at": "2026-10-17T14:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 70000
+  },
+  {
+   "id": "tx_0225",
+   "at": "2026-10-17T18:45:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0226",
+   "at": "2026-10-17T20:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0227",
+   "at": "2026-10-18T08:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 500000
+  },
+  {
+   "id": "tx_0228",
+   "at": "2026-10-18T09:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 95000
+  },
+  {
+   "id": "tx_0229",
+   "at": "2026-10-18T10:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0230",
+   "at": "2026-10-18T11:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 49000
+  },
+  {
+   "id": "tx_0231",
+   "at": "2026-10-18T13:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 39000
+  },
+  {
+   "id": "tx_0232",
+   "at": "2026-10-18T18:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 61000
+  },
+  {
+   "id": "tx_0233",
+   "at": "2026-10-19T15:30:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Uniqlo",
+   "amount_vnd": 277000
+  },
+  {
+   "id": "tx_0234",
+   "at": "2026-10-19T17:50:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Phòng khám Vigor",
+   "amount_vnd": 136000
+  },
+  {
+   "id": "tx_0235",
+   "at": "2026-10-19T18:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0236",
+   "at": "2026-10-20T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "Spotify",
+   "amount_vnd": 59000
+  },
+  {
+   "id": "tx_0237",
+   "at": "2026-10-20T07:15:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 141000
+  },
+  {
+   "id": "tx_0238",
+   "at": "2026-10-20T08:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 56000
+  },
+  {
+   "id": "tx_0239",
+   "at": "2026-10-20T12:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 36000
+  },
+  {
+   "id": "tx_0240",
+   "at": "2026-10-20T17:30:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "CGV",
+   "amount_vnd": 127000
+  },
+  {
+   "id": "tx_0241",
+   "at": "2026-10-21T07:40:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 91000
+  },
+  {
+   "id": "tx_0242",
+   "at": "2026-10-21T10:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 40000
+  },
+  {
+   "id": "tx_0243",
+   "at": "2026-10-21T21:45:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 24000
+  },
+  {
+   "id": "tx_0244",
+   "at": "2026-10-21T22:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0245",
+   "at": "2026-10-22T07:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 96000
+  },
+  {
+   "id": "tx_0246",
+   "at": "2026-10-22T08:20:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Trần Thị Lan",
+   "amount_vnd": 100000
+  },
+  {
+   "id": "tx_0247",
+   "at": "2026-10-22T08:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 29000
+  },
+  {
+   "id": "tx_0248",
+   "at": "2026-10-22T11:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 29000
+  },
+  {
+   "id": "tx_0249",
+   "at": "2026-10-22T20:15:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 50000
+  },
+  {
+   "id": "tx_0250",
+   "at": "2026-10-22T21:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 27000
+  },
+  {
+   "id": "tx_0251",
+   "at": "2026-10-23T12:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 19000
+  },
+  {
+   "id": "tx_0252",
+   "at": "2026-10-23T16:35:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 77000
+  },
+  {
+   "id": "tx_0253",
+   "at": "2026-10-23T21:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0254",
+   "at": "2026-10-24T08:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 72000
+  },
+  {
+   "id": "tx_0255",
+   "at": "2026-10-25T11:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 16000
+  },
+  {
+   "id": "tx_0256",
+   "at": "2026-10-26T08:55:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 54000
+  },
+  {
+   "id": "tx_0257",
+   "at": "2026-10-26T09:35:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 61000
+  },
+  {
+   "id": "tx_0258",
+   "at": "2026-10-26T10:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 53000
+  },
+  {
+   "id": "tx_0259",
+   "at": "2026-10-26T11:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 98000
+  },
+  {
+   "id": "tx_0260",
+   "at": "2026-10-26T18:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 40000
+  },
+  {
+   "id": "tx_0261",
+   "at": "2026-10-26T22:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 500000
+  },
+  {
+   "id": "tx_0262",
+   "at": "2026-10-27T10:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 47000
+  },
+  {
+   "id": "tx_0263",
+   "at": "2026-10-27T13:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 38000
+  },
+  {
+   "id": "tx_0264",
+   "at": "2026-10-27T19:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 73000
+  },
+  {
+   "id": "tx_0265",
+   "at": "2026-10-27T20:15:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 30000
+  },
+  {
+   "id": "tx_0266",
+   "at": "2026-10-28T07:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 51000
+  },
+  {
+   "id": "tx_0267",
+   "at": "2026-10-28T12:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 46000
+  },
+  {
+   "id": "tx_0268",
+   "at": "2026-10-28T14:00:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Lotte Cinema",
+   "amount_vnd": 95000
+  },
+  {
+   "id": "tx_0269",
+   "at": "2026-10-28T14:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 101000
+  },
+  {
+   "id": "tx_0270",
+   "at": "2026-10-28T14:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 54000
+  },
+  {
+   "id": "tx_0271",
+   "at": "2026-10-28T15:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 53000
+  },
+  {
+   "id": "tx_0272",
+   "at": "2026-10-28T16:15:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Lazada",
+   "amount_vnd": 285000
+  },
+  {
+   "id": "tx_0273",
+   "at": "2026-10-28T17:10:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 91000
+  },
+  {
+   "id": "tx_0274",
+   "at": "2026-10-28T17:10:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 177000
+  },
+  {
+   "id": "tx_0275",
+   "at": "2026-10-28T17:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 78000
+  },
+  {
+   "id": "tx_0276",
+   "at": "2026-10-28T18:15:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 15000
+  },
+  {
+   "id": "tx_0277",
+   "at": "2026-10-28T20:15:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Nguyễn Văn Minh",
+   "amount_vnd": 100000
+  },
+  {
+   "id": "tx_0278",
+   "at": "2026-10-28T20:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 54000
+  },
+  {
+   "id": "tx_0279",
+   "at": "2026-10-29T09:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 21000
+  },
+  {
+   "id": "tx_0280",
+   "at": "2026-10-31T15:20:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "CGV",
+   "amount_vnd": 144000
+  },
+  {
+   "id": "tx_0281",
+   "at": "2026-11-01T07:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 26000
+  },
+  {
+   "id": "tx_0282",
+   "at": "2026-11-01T12:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 17000
+  },
+  {
+   "id": "tx_0283",
+   "at": "2026-11-01T16:50:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Mẹ",
+   "amount_vnd": 250000
+  },
+  {
+   "id": "tx_0284",
+   "at": "2026-11-02T09:15:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 12000
+  },
+  {
+   "id": "tx_0285",
+   "at": "2026-11-02T13:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 54000
+  },
+  {
+   "id": "tx_0286",
+   "at": "2026-11-02T13:55:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Shopee",
+   "amount_vnd": 241000
+  },
+  {
+   "id": "tx_0287",
+   "at": "2026-11-02T15:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 60000
+  },
+  {
+   "id": "tx_0288",
+   "at": "2026-11-02T19:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 26000
+  },
+  {
+   "id": "tx_0289",
+   "at": "2026-11-02T20:45:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Shopee",
+   "amount_vnd": 121000
+  },
+  {
+   "id": "tx_0290",
+   "at": "2026-11-03T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "Netflix",
+   "amount_vnd": 260000
+  },
+  {
+   "id": "tx_0291",
+   "at": "2026-11-03T07:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 33000
+  },
+  {
+   "id": "tx_0292",
+   "at": "2026-11-03T10:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 49000
+  },
+  {
+   "id": "tx_0293",
+   "at": "2026-11-03T11:50:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 64000
+  },
+  {
+   "id": "tx_0294",
+   "at": "2026-11-03T13:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 40000
+  },
+  {
+   "id": "tx_0295",
+   "at": "2026-11-03T16:45:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 18000
+  },
+  {
+   "id": "tx_0296",
+   "at": "2026-11-03T20:30:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 244000
+  },
+  {
+   "id": "tx_0297",
+   "at": "2026-11-03T21:10:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 51000
+  },
+  {
+   "id": "tx_0298",
+   "at": "2026-11-04T08:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0299",
+   "at": "2026-11-04T08:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 47000
+  },
+  {
+   "id": "tx_0300",
+   "at": "2026-11-04T08:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 51000
+  },
+  {
+   "id": "tx_0301",
+   "at": "2026-11-04T09:15:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 56000
+  },
+  {
+   "id": "tx_0302",
+   "at": "2026-11-04T17:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0303",
+   "at": "2026-11-04T18:45:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 237000
+  },
+  {
+   "id": "tx_0304",
+   "at": "2026-11-04T19:55:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 24000
+  },
+  {
+   "id": "tx_0305",
+   "at": "2026-11-04T21:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 27000
+  },
+  {
+   "id": "tx_0306",
+   "at": "2026-11-05T09:00:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Công ty Lương",
+   "amount_vnd": 15000000
+  },
+  {
+   "id": "tx_0307",
+   "at": "2026-11-05T10:20:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 98000
+  },
+  {
+   "id": "tx_0308",
+   "at": "2026-11-05T12:10:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Nhà thuốc Long Châu",
+   "amount_vnd": 75000
+  },
+  {
+   "id": "tx_0309",
+   "at": "2026-11-05T13:45:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 64000
+  },
+  {
+   "id": "tx_0310",
+   "at": "2026-11-05T13:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 86000
+  },
+  {
+   "id": "tx_0311",
+   "at": "2026-11-05T19:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 14000
+  },
+  {
+   "id": "tx_0312",
+   "at": "2026-11-05T21:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 100000
+  },
+  {
+   "id": "tx_0313",
+   "at": "2026-11-06T10:15:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 38000
+  },
+  {
+   "id": "tx_0314",
+   "at": "2026-11-06T16:00:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 54000
+  },
+  {
+   "id": "tx_0315",
+   "at": "2026-11-06T16:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0316",
+   "at": "2026-11-06T19:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 72000
+  },
+  {
+   "id": "tx_0317",
+   "at": "2026-11-07T07:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0318",
+   "at": "2026-11-07T09:15:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 80000
+  },
+  {
+   "id": "tx_0319",
+   "at": "2026-11-07T09:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 62000
+  },
+  {
+   "id": "tx_0320",
+   "at": "2026-11-07T10:35:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Shopee",
+   "amount_vnd": 361000
+  },
+  {
+   "id": "tx_0321",
+   "at": "2026-11-07T12:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 39000
+  },
+  {
+   "id": "tx_0322",
+   "at": "2026-11-07T15:40:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 21000
+  },
+  {
+   "id": "tx_0323",
+   "at": "2026-11-07T16:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 25000
+  },
+  {
+   "id": "tx_0324",
+   "at": "2026-11-07T21:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0325",
+   "at": "2026-11-07T21:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 27000
+  },
+  {
+   "id": "tx_0326",
+   "at": "2026-11-08T08:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 73000
+  },
+  {
+   "id": "tx_0327",
+   "at": "2026-11-08T11:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 16000
+  },
+  {
+   "id": "tx_0328",
+   "at": "2026-11-08T11:40:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0329",
+   "at": "2026-11-08T12:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "EVN TP.HCM",
+   "amount_vnd": 580000
+  },
+  {
+   "id": "tx_0330",
+   "at": "2026-11-08T13:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0331",
+   "at": "2026-11-08T14:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 55000
+  },
+  {
+   "id": "tx_0332",
+   "at": "2026-11-08T14:55:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 362000
+  },
+  {
+   "id": "tx_0333",
+   "at": "2026-11-08T15:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 43000
+  },
+  {
+   "id": "tx_0334",
+   "at": "2026-11-08T17:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 64000
+  },
+  {
+   "id": "tx_0335",
+   "at": "2026-11-08T19:00:00+07:00",
+   "direction": "IN",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 250000
+  },
+  {
+   "id": "tx_0336",
+   "at": "2026-11-09T07:55:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 71000
+  },
+  {
+   "id": "tx_0337",
+   "at": "2026-11-09T15:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 30000
+  },
+  {
+   "id": "tx_0338",
+   "at": "2026-11-09T16:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 93000
+  },
+  {
+   "id": "tx_0339",
+   "at": "2026-11-09T21:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Trần Thị Lan",
+   "amount_vnd": 1000000
+  },
+  {
+   "id": "tx_0340",
+   "at": "2026-11-09T21:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 67000
+  },
+  {
+   "id": "tx_0341",
+   "at": "2026-11-09T21:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Mẹ",
+   "amount_vnd": 100000
+  },
+  {
+   "id": "tx_0342",
+   "at": "2026-11-10T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "YouTube Premium",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0343",
+   "at": "2026-11-10T10:50:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "CGV",
+   "amount_vnd": 126000
+  },
+  {
+   "id": "tx_0344",
+   "at": "2026-11-11T11:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 74000
+  },
+  {
+   "id": "tx_0345",
+   "at": "2026-11-11T16:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 19000
+  },
+  {
+   "id": "tx_0346",
+   "at": "2026-11-12T09:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Trà sữa Gong Cha",
+   "amount_vnd": 66000
+  },
+  {
+   "id": "tx_0347",
+   "at": "2026-11-12T10:05:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Steam",
+   "amount_vnd": 88000
+  },
+  {
+   "id": "tx_0348",
+   "at": "2026-11-12T12:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 26000
+  },
+  {
+   "id": "tx_0349",
+   "at": "2026-11-12T16:10:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Lê Quốc Bảo",
+   "amount_vnd": 500000
+  },
+  {
+   "id": "tx_0350",
+   "at": "2026-11-12T19:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "FPT Internet",
+   "amount_vnd": 220000
+  },
+  {
+   "id": "tx_0351",
+   "at": "2026-11-12T19:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 24000
+  },
+  {
+   "id": "tx_0352",
+   "at": "2026-11-12T19:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 80000
+  },
+  {
+   "id": "tx_0353",
+   "at": "2026-11-13T08:40:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Grab",
+   "amount_vnd": 28000
+  },
+  {
+   "id": "tx_0354",
+   "at": "2026-11-13T09:05:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 50000
+  },
+  {
+   "id": "tx_0355",
+   "at": "2026-11-13T14:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Bách Hóa Xanh",
+   "amount_vnd": 254000
+  },
+  {
+   "id": "tx_0356",
+   "at": "2026-11-13T14:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 33000
+  },
+  {
+   "id": "tx_0357",
+   "at": "2026-11-13T18:35:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 20000
+  },
+  {
+   "id": "tx_0358",
+   "at": "2026-11-13T22:35:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 143000
+  },
+  {
+   "id": "tx_0359",
+   "at": "2026-11-14T20:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 61000
+  },
+  {
+   "id": "tx_0360",
+   "at": "2026-11-14T21:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Cơm tấm Ba Ghiền",
+   "amount_vnd": 77000
+  },
+  {
+   "id": "tx_0361",
+   "at": "2026-11-15T07:55:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 20000
+  },
+  {
+   "id": "tx_0362",
+   "at": "2026-11-15T08:00:00+07:00",
+   "direction": "OUT",
+   "category": "BILLS",
+   "counterparty": "Nạp tiền điện thoại",
+   "amount_vnd": 50000
+  },
+  {
+   "id": "tx_0363",
+   "at": "2026-11-15T11:00:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 63000
+  },
+  {
+   "id": "tx_0364",
+   "at": "2026-11-16T07:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 101000
+  },
+  {
+   "id": "tx_0365",
+   "at": "2026-11-16T08:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 71000
+  },
+  {
+   "id": "tx_0366",
+   "at": "2026-11-16T08:10:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 146000
+  },
+  {
+   "id": "tx_0367",
+   "at": "2026-11-16T17:30:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Co.opmart",
+   "amount_vnd": 238000
+  },
+  {
+   "id": "tx_0368",
+   "at": "2026-11-17T09:45:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 87000
+  },
+  {
+   "id": "tx_0369",
+   "at": "2026-11-17T10:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 72000
+  },
+  {
+   "id": "tx_0370",
+   "at": "2026-11-17T17:20:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Trần Thị Lan",
+   "amount_vnd": 300000
+  },
+  {
+   "id": "tx_0371",
+   "at": "2026-11-17T20:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 70000
+  },
+  {
+   "id": "tx_0372",
+   "at": "2026-11-17T22:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 77000
+  },
+  {
+   "id": "tx_0373",
+   "at": "2026-11-18T11:50:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Steam",
+   "amount_vnd": 126000
+  },
+  {
+   "id": "tx_0374",
+   "at": "2026-11-18T17:00:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0375",
+   "at": "2026-11-18T18:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 31000
+  },
+  {
+   "id": "tx_0376",
+   "at": "2026-11-18T19:50:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Petrolimex",
+   "amount_vnd": 12000
+  },
+  {
+   "id": "tx_0377",
+   "at": "2026-11-18T21:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 44000
+  },
+  {
+   "id": "tx_0378",
+   "at": "2026-11-18T22:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 49000
+  },
+  {
+   "id": "tx_0379",
+   "at": "2026-11-19T22:30:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 59000
+  },
+  {
+   "id": "tx_0380",
+   "at": "2026-11-20T06:00:00+07:00",
+   "direction": "OUT",
+   "category": "SUBSCRIPTION",
+   "counterparty": "Spotify",
+   "amount_vnd": 59000
+  },
+  {
+   "id": "tx_0381",
+   "at": "2026-11-20T11:15:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 47000
+  },
+  {
+   "id": "tx_0382",
+   "at": "2026-11-20T12:50:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "WinMart",
+   "amount_vnd": 148000
+  },
+  {
+   "id": "tx_0383",
+   "at": "2026-11-20T17:15:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 33000
+  },
+  {
+   "id": "tx_0384",
+   "at": "2026-11-21T08:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 49000
+  },
+  {
+   "id": "tx_0385",
+   "at": "2026-11-21T10:10:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 157000
+  },
+  {
+   "id": "tx_0386",
+   "at": "2026-11-21T11:00:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 29000
+  },
+  {
+   "id": "tx_0387",
+   "at": "2026-11-21T12:50:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSFER_OUT",
+   "counterparty": "Mẹ",
+   "amount_vnd": 300000
+  },
+  {
+   "id": "tx_0388",
+   "at": "2026-11-21T13:45:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 60000
+  },
+  {
+   "id": "tx_0389",
+   "at": "2026-11-21T22:45:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 38000
+  },
+  {
+   "id": "tx_0390",
+   "at": "2026-11-22T10:35:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 45000
+  },
+  {
+   "id": "tx_0391",
+   "at": "2026-11-22T10:45:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 82000
+  },
+  {
+   "id": "tx_0392",
+   "at": "2026-11-22T20:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 37000
+  },
+  {
+   "id": "tx_0393",
+   "at": "2026-11-23T08:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 40000
+  },
+  {
+   "id": "tx_0394",
+   "at": "2026-11-23T08:55:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 36000
+  },
+  {
+   "id": "tx_0395",
+   "at": "2026-11-23T09:10:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 95000
+  },
+  {
+   "id": "tx_0396",
+   "at": "2026-11-23T09:35:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 56000
+  },
+  {
+   "id": "tx_0397",
+   "at": "2026-11-23T11:20:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 17000
+  },
+  {
+   "id": "tx_0398",
+   "at": "2026-11-23T14:30:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 79000
+  },
+  {
+   "id": "tx_0399",
+   "at": "2026-11-23T19:15:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Phòng khám Vigor",
+   "amount_vnd": 105000
+  },
+  {
+   "id": "tx_0400",
+   "at": "2026-11-24T14:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 74000
+  },
+  {
+   "id": "tx_0401",
+   "at": "2026-11-25T10:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 57000
+  },
+  {
+   "id": "tx_0402",
+   "at": "2026-11-25T10:30:00+07:00",
+   "direction": "OUT",
+   "category": "SHOPPING",
+   "counterparty": "Tiki",
+   "amount_vnd": 314000
+  },
+  {
+   "id": "tx_0403",
+   "at": "2026-11-25T11:40:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Phở Hòa",
+   "amount_vnd": 35000
+  },
+  {
+   "id": "tx_0404",
+   "at": "2026-11-25T19:30:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Xanh SM",
+   "amount_vnd": 43000
+  },
+  {
+   "id": "tx_0405",
+   "at": "2026-11-25T20:05:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "The Coffee House",
+   "amount_vnd": 46000
+  },
+  {
+   "id": "tx_0406",
+   "at": "2026-11-25T22:20:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bánh mì Huynh Hoa",
+   "amount_vnd": 54000
+  },
+  {
+   "id": "tx_0407",
+   "at": "2026-11-26T08:45:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Phúc Long",
+   "amount_vnd": 38000
+  },
+  {
+   "id": "tx_0408",
+   "at": "2026-11-26T11:05:00+07:00",
+   "direction": "OUT",
+   "category": "HEALTH",
+   "counterparty": "Pharmacity",
+   "amount_vnd": 200000
+  },
+  {
+   "id": "tx_0409",
+   "at": "2026-11-26T21:40:00+07:00",
+   "direction": "OUT",
+   "category": "EDUCATION",
+   "counterparty": "Udemy",
+   "amount_vnd": 349000
+  },
+  {
+   "id": "tx_0410",
+   "at": "2026-11-27T10:45:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Lotte Cinema",
+   "amount_vnd": 90000
+  },
+  {
+   "id": "tx_0411",
+   "at": "2026-11-28T11:15:00+07:00",
+   "direction": "OUT",
+   "category": "ENTERTAINMENT",
+   "counterparty": "Karaoke Nice",
+   "amount_vnd": 90000
+  },
+  {
+   "id": "tx_0412",
+   "at": "2026-11-28T14:20:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Cộng Cà Phê",
+   "amount_vnd": 24000
+  },
+  {
+   "id": "tx_0413",
+   "at": "2026-11-28T16:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 72000
+  },
+  {
+   "id": "tx_0414",
+   "at": "2026-11-28T18:15:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "GrabFood",
+   "amount_vnd": 55000
+  },
+  {
+   "id": "tx_0415",
+   "at": "2026-11-29T07:00:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "ShopeeFood",
+   "amount_vnd": 58000
+  },
+  {
+   "id": "tx_0416",
+   "at": "2026-11-29T17:50:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 73000
+  },
+  {
+   "id": "tx_0417",
+   "at": "2026-11-30T07:55:00+07:00",
+   "direction": "OUT",
+   "category": "GROCERY",
+   "counterparty": "Circle K",
+   "amount_vnd": 176000
+  },
+  {
+   "id": "tx_0418",
+   "at": "2026-11-30T08:05:00+07:00",
+   "direction": "OUT",
+   "category": "TRANSPORT",
+   "counterparty": "Be",
+   "amount_vnd": 34000
+  },
+  {
+   "id": "tx_0419",
+   "at": "2026-11-30T12:10:00+07:00",
+   "direction": "OUT",
+   "category": "CAFE",
+   "counterparty": "Highlands Coffee",
+   "amount_vnd": 55000
+  },
+  {
+   "id": "tx_0420",
+   "at": "2026-11-30T12:50:00+07:00",
+   "direction": "OUT",
+   "category": "FOOD",
+   "counterparty": "Bún bò Huế O Xuân",
+   "amount_vnd": 50000
+  }
+ ],
+ "contacts": [
+  {
+   "id": "c_minh",
+   "display_name": "Nguyễn Văn Minh",
+   "aliases": [],
+   "bank_bin": "970436",
+   "account_number": "0123456789"
+  },
+  {
+   "id": "c_lan_tran",
+   "display_name": "Trần Thị Lan",
+   "aliases": [],
+   "bank_bin": "970415",
+   "account_number": "0441234501"
+  },
+  {
+   "id": "c_lan_pham",
+   "display_name": "Phạm Ngọc Lan",
+   "aliases": [],
+   "bank_bin": "970418",
+   "account_number": "0441234502"
+  },
+  {
+   "id": "c_bao",
+   "display_name": "Lê Quốc Bảo",
+   "aliases": [],
+   "bank_bin": "970423",
+   "account_number": "00001234567"
+  },
+  {
+   "id": "c_me",
+   "display_name": "Mẹ",
+   "aliases": [
+    "má",
+    "mẹ yêu"
+   ],
+   "bank_bin": "970405",
+   "account_number": "0901234567"
+  }
+ ],
+ "bills": [
+  {
+   "provider_id": "EVN_HCMC",
+   "provider_name": "Điện lực TP.HCM",
+   "period": "2026-08",
+   "amount_vnd": 600000,
+   "due_date": "2026-09-05",
+   "status": "PAID"
+  },
+  {
+   "provider_id": "EVN_HCMC",
+   "provider_name": "Điện lực TP.HCM",
+   "period": "2026-09",
+   "amount_vnd": 620000,
+   "due_date": "2026-10-05",
+   "status": "PAID"
+  },
+  {
+   "provider_id": "EVN_HCMC",
+   "provider_name": "Điện lực TP.HCM",
+   "period": "2026-10",
+   "amount_vnd": 580000,
+   "due_date": "2026-11-05",
+   "status": "PAID"
+  },
+  {
+   "provider_id": "EVN_HCMC",
+   "provider_name": "Điện lực TP.HCM",
+   "period": "2026-11",
+   "amount_vnd": 840000,
+   "due_date": "2026-12-05",
+   "status": "UNPAID"
+  },
+  {
+   "provider_id": "SAWACO",
+   "provider_name": "Cấp nước Sài Gòn",
+   "period": "2026-10",
+   "amount_vnd": 150000,
+   "due_date": "2026-11-05",
+   "status": "PAID"
+  },
+  {
+   "provider_id": "SAWACO",
+   "provider_name": "Cấp nước Sài Gòn",
+   "period": "2026-11",
+   "amount_vnd": 155000,
+   "due_date": "2026-12-05",
+   "status": "UNPAID"
+  },
+  {
+   "provider_id": "FPT_INTERNET",
+   "provider_name": "FPT Internet",
+   "period": "2026-08",
+   "amount_vnd": 220000,
+   "due_date": "2026-09-05",
+   "status": "PAID"
+  },
+  {
+   "provider_id": "FPT_INTERNET",
+   "provider_name": "FPT Internet",
+   "period": "2026-09",
+   "amount_vnd": 220000,
+   "due_date": "2026-10-05",
+   "status": "PAID"
+  },
+  {
+   "provider_id": "FPT_INTERNET",
+   "provider_name": "FPT Internet",
+   "period": "2026-10",
+   "amount_vnd": 220000,
+   "due_date": "2026-11-05",
+   "status": "PAID"
+  },
+  {
+   "provider_id": "FPT_INTERNET",
+   "provider_name": "FPT Internet",
+   "period": "2026-11",
+   "amount_vnd": 220000,
+   "due_date": "2026-12-05",
+   "status": "UNPAID"
+  }
+ ],
+ "subscriptions": [
+  {
+   "id": "sub_netflix",
+   "name": "Netflix",
+   "amount_vnd": 260000,
+   "renewal_date": "2026-12-03",
+   "last_used_at": "2026-11-29T21:00:00+07:00"
+  },
+  {
+   "id": "sub_spotify",
+   "name": "Spotify",
+   "amount_vnd": 59000,
+   "renewal_date": "2026-12-20",
+   "last_used_at": "2026-10-16T09:30:00+07:00"
+  },
+  {
+   "id": "sub_youtube",
+   "name": "YouTube Premium",
+   "amount_vnd": 79000,
+   "renewal_date": "2026-12-10",
+   "last_used_at": "2026-11-30T18:45:00+07:00"
+  }
+ ],
+ "budgets": [
+  {
+   "category": "FOOD",
+   "limit_vnd": 3000000
+  },
+  {
+   "category": "CAFE",
+   "limit_vnd": 1000000
+  },
+  {
+   "category": "TRANSPORT",
+   "limit_vnd": 1500000
+  }
+ ],
+ "trusted_contacts": [
+  {
+   "name": "Mẹ",
+   "phone": "0901234567"
+  }
+ ],
+ "profile": {
+  "display_name": "DEMO USER",
+  "bank_bin": "970436",
+  "account_number": "0071000999888"
+ }
+}

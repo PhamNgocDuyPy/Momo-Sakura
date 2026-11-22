@@ -1,0 +1,23 @@
+{
+  "id": "A11",
+  "title_vi": "Hóa đơn điện tăng bất thường",
+  "description_vi": "Ví sandbox có hóa đơn EVN_HCMC kỳ 2026-11 tăng 40% so với trung bình 3 kỳ trước; SAWACO (dưới 3 kỳ) và FPT_INTERNET không có cảnh báo.",
+  "group": "assistant",
+  "channel": "WALLET_SUMMARY",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "GET /api/wallet/summary",
+      "request": {},
+      "expect": {
+        "assert": [
+          {"path": "alerts.0.type", "op": "eq", "value": "BILL_SPIKE"},
+          {"path": "alerts.0.provider_id", "op": "eq", "value": "EVN_HCMC"},
+          {"path": "alerts.0.current_vnd", "op": "eq", "value": 840000},
+          {"path": "alerts.0.avg3_vnd", "op": "eq", "value": 600000},
+          {"path": "alerts.0.increase_percent", "op": "eq", "value": 40}
+        ]
+      }
+    }
+  ]
+}

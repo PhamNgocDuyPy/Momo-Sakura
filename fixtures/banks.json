@@ -1,0 +1,12 @@
+[
+  {"bin": "970436", "name": "Vietcombank", "aliases": ["vcb", "vietcombank", "ngoai thuong"], "official_domains": ["vietcombank.com.vn"], "deeplink_template": null},
+  {"bin": "970415", "name": "VietinBank", "aliases": ["vietin", "vietinbank", "ctg", "cong thuong"], "official_domains": ["vietinbank.vn"], "deeplink_template": null},
+  {"bin": "970418", "name": "BIDV", "aliases": ["bidv", "dau tu phat trien"], "official_domains": ["bidv.com.vn"], "deeplink_template": null},
+  {"bin": "970405", "name": "Agribank", "aliases": ["agribank", "nong nghiep"], "official_domains": ["agribank.com.vn"], "deeplink_template": null},
+  {"bin": "970407", "name": "Techcombank", "aliases": ["tcb", "techcombank", "ky thuong"], "official_domains": ["techcombank.com.vn"], "deeplink_template": null},
+  {"bin": "970422", "name": "MB Bank", "aliases": ["mb", "mbbank", "mb bank", "quan doi"], "official_domains": ["mbbank.com.vn"], "deeplink_template": null},
+  {"bin": "970432", "name": "VPBank", "aliases": ["vpb", "vpbank", "thinh vuong"], "official_domains": ["vpbank.com.vn"], "deeplink_template": null},
+  {"bin": "970423", "name": "TPBank", "aliases": ["tpb", "tpbank", "tien phong"], "official_domains": ["tpb.vn"], "deeplink_template": null},
+  {"bin": "970416", "name": "ACB", "aliases": ["acb", "a chau"], "official_domains": ["acb.com.vn"], "deeplink_template": null},
+  {"bin": "970403", "name": "Sacombank", "aliases": ["stb", "sacombank", "sai gon thuong tin"], "official_domains": ["sacombank.com.vn"], "deeplink_template": null}
+]

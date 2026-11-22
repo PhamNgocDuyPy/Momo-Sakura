@@ -1,0 +1,43 @@
+{
+  "id": "A08",
+  "title_vi": "Khuyến mãi MoMo chính thức",
+  "description_vi": "F5: mã MOMOXMAS26 có trong danh sách chính thức và còn hiệu lực.",
+  "group": "assistant",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "MoMo tặng voucher 50k mã MOMOXMAS26 cho đơn từ 100k, nhập mã trong ứng dụng"
+        },
+        "mode": "PROMO"
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "reason_codes_include": [
+          "RC_PROMO_MATCHES_OFFICIAL_LIST"
+        ],
+        "assert": [
+          {
+            "path": "extensions.promo.matched",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "extensions.promo.promo_code",
+            "op": "eq",
+            "value": "MOMOXMAS26"
+          },
+          {
+            "path": "extensions.promo.official_promo.valid_to",
+            "op": "eq",
+            "value": "2026-12-31"
+          }
+        ]
+      }
+    }
+  ]
+}

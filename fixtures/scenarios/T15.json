@@ -1,0 +1,27 @@
+{
+  "id": "T15",
+  "title_vi": "QR Tag 62 độ dài theo byte",
+  "description_vi": "Tag 62 tiếng Việt mã hóa độ dài theo byte UTF-8.",
+  "group": "red-risk",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970436",
+        "account_number": "1012345678",
+        "amount_vnd": 150000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T15}}"
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "qr_result": "VALID_VIETQR",
+        "qr_flags_include": [
+          "UTF8_BYTE_FALLBACK"
+        ]
+      }
+    }
+  ]
+}

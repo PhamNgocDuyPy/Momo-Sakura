@@ -1,0 +1,33 @@
+{
+  "id": "T31",
+  "title_vi": "Người nhận lần đầu",
+  "description_vi": "Không lịch sử, cần ngữ cảnh.",
+  "group": "cold-start",
+  "channel": "FLOW_A",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970418",
+        "account_number": "21410000123456",
+        "amount_vnd": 300000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T31}}"
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_COLD_START_NEEDS_CONTEXT"
+        ],
+        "assert": [
+          {
+            "path": "ui_hints.show_context_elicitation",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    }
+  ]
+}

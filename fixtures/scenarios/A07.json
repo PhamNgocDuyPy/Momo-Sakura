@@ -1,0 +1,109 @@
+{
+  "id": "A07",
+  "title_vi": "Hỏi chi tiêu bằng câu nói",
+  "description_vi": "F6: 'tháng này cà phê hết bao nhiêu?' và 'tuần trước đi grab mấy lần?'; value khớp hàm tham chiếu độc lập.",
+  "group": "assistant",
+  "channel": "ASSISTANT",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/assistant/command",
+      "request": {
+        "text": "tháng này cà phê hết bao nhiêu?"
+      },
+      "expect": {
+        "assert": [
+          {
+            "path": "intent.intent",
+            "op": "eq",
+            "value": "SPEND_QUERY"
+          },
+          {
+            "path": "intent.spend.category",
+            "op": "eq",
+            "value": "CAFE"
+          },
+          {
+            "path": "intent.spend.period",
+            "op": "eq",
+            "value": "THIS_MONTH"
+          },
+          {
+            "path": "intent.spend.metric",
+            "op": "eq",
+            "value": "TOTAL"
+          },
+          {
+            "path": "result.type",
+            "op": "eq",
+            "value": "SPEND_ANSWER"
+          },
+          {
+            "path": "result.unit",
+            "op": "eq",
+            "value": "VND"
+          },
+          {
+            "path": "result.value",
+            "op": "matches_reference",
+            "value": {
+              "fn": "spend_reference",
+              "args": {
+                "category": "CAFE",
+                "period": "THIS_MONTH",
+                "metric": "TOTAL"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/assistant/command",
+      "request": {
+        "text": "tuần trước đi grab mấy lần?"
+      },
+      "expect": {
+        "assert": [
+          {
+            "path": "intent.spend.category",
+            "op": "eq",
+            "value": "TRANSPORT"
+          },
+          {
+            "path": "intent.spend.period",
+            "op": "eq",
+            "value": "LAST_WEEK"
+          },
+          {
+            "path": "intent.spend.metric",
+            "op": "eq",
+            "value": "COUNT"
+          },
+          {
+            "path": "result.type",
+            "op": "eq",
+            "value": "SPEND_ANSWER"
+          },
+          {
+            "path": "result.unit",
+            "op": "eq",
+            "value": "COUNT"
+          },
+          {
+            "path": "result.value",
+            "op": "matches_reference",
+            "value": {
+              "fn": "spend_reference",
+              "args": {
+                "category": "TRANSPORT",
+                "period": "LAST_WEEK",
+                "metric": "COUNT"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

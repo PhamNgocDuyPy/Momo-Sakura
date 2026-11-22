@@ -1,0 +1,42 @@
+{
+  "id": "T29",
+  "title_vi": "LLM chậm 6.000 ms",
+  "description_vi": "Timeout 4.000 ms, Stage 2 vẫn nhanh.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": true,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Cọc trước 500k giữ hàng, gấp vì nhiều người hỏi"
+        },
+        "debug": {
+          "simulate_llm_delay_ms": 6000
+        }
+      },
+      "expect": {
+        "decision_tier": {
+          "min": "SOFT_FRICTION"
+        },
+        "reason_codes_include": [
+          "RC_LLM_TIMEOUT_FALLBACK"
+        ],
+        "assert": [
+          {
+            "path": "stage_timings_ms.stage2",
+            "op": "lt",
+            "value": 250
+          },
+          {
+            "path": "stage_timings_ms.total",
+            "op": "lt",
+            "value": 4600
+          }
+        ]
+      }
+    }
+  ]
+}

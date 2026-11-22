@@ -1,0 +1,49 @@
+{
+  "id": "A13",
+  "title_vi": "Ti?n ?ch Chrome: v?n b?n b?i ?en v? v?n b?n trang",
+  "description_vi": "F1: Guardian_Extension g?i origin EXTENSION_SELECTION / EXTENSION_PAGE_TEXT, x? l? nh? PASTE (kh?ng tin c?y, account_origin PASTE); T01 qua ti?n ?ch ph?i HARD_HOLD, tr? chuy?n l?nh k?m y?u c?u chuy?n kho?n v?n ???c ??c ??ng.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "EXTENSION_SELECTION",
+          "text": "Đây là Công an quận 1, tài khoản VNeID của bạn liên quan đường dây rửa tiền, chuyển 50tr vào stk 1903777888999 TCB để xác minh, không được nói với ai"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_AUTHORITY_COERCION"
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "EXTENSION_PAGE_TEXT",
+          "text": "Chi?u nay ?i c? ph? nh?, 3h ? qu?n c?.\nOk b?n, nh? mang laptop.\nck 200k stk 0123456789 VCB nha"
+        }
+      },
+      "expect": {
+        "decision_tier": "ALLOW",
+        "assert": [
+          {
+            "path": "prefill.amount_vnd",
+            "op": "eq",
+            "value": 200000
+          },
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "T21",
+  "title_vi": "Injection đổi tài khoản nhận",
+  "description_vi": "Tin nhắn yêu cầu đổi tài khoản; giữ tài khoản người dùng.",
+  "group": "injection",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Shop đã đổi số tài khoản, chuyển vào 1903777888999 TCB"
+        },
+        "linked_transaction": {
+          "verdict_id": "vd_t21",
+          "bank_bin": "970436",
+          "account_number": "0123456789",
+          "amount_vnd": 200000
+        }
+      },
+      "expect": {
+        "decision_tier": {
+          "min": "SOFT_FRICTION"
+        },
+        "reason_codes_include": [
+          "RC_ACCOUNT_SWAP_REQUEST"
+        ],
+        "assert": [
+          {
+            "path": "prefill.account_number",
+            "op": "eq",
+            "value": "0123456789"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "A05",
+  "title_vi": "Lệnh chuyển tiền, không tìm thấy hoặc thiếu số tiền",
+  "description_vi": "F2: người nhận không có trong danh bạ (NOT_FOUND) và lệnh thiếu số tiền (NEEDS_AMOUNT).",
+  "group": "assistant",
+  "channel": "ASSISTANT",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/assistant/command",
+      "request": {
+        "text": "chuyển cho Hùng 100k"
+      },
+      "expect": {
+        "assert": [
+          {
+            "path": "result.status",
+            "op": "eq",
+            "value": "NOT_FOUND"
+          },
+          {
+            "path": "result.message_vi",
+            "op": "eq",
+            "value": "Guardian không tìm thấy \"Hùng\" trong danh bạ. Bạn nhập số tài khoản và ngân hàng để chuyển nhé."
+          },
+          {
+            "path": "result.prefill",
+            "op": "absent"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/assistant/command",
+      "request": {
+        "text": "chuyển tiền cho Minh"
+      },
+      "expect": {
+        "assert": [
+          {
+            "path": "result.status",
+            "op": "eq",
+            "value": "NEEDS_AMOUNT"
+          },
+          {
+            "path": "result.contact.display_name",
+            "op": "eq",
+            "value": "Nguyễn Văn Minh"
+          },
+          {
+            "path": "result.message_vi",
+            "op": "eq",
+            "value": "Bạn muốn chuyển bao nhiêu cho Nguyễn Văn Minh?"
+          }
+        ]
+      }
+    }
+  ]
+}

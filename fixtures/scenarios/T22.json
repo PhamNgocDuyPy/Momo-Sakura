@@ -1,0 +1,29 @@
+{
+  "id": "T22",
+  "title_vi": "Bỏ qua kiểm tra QR (R6)",
+  "description_vi": "QR hợp lệ nhưng bước verify_vietqr_emvco bị bỏ qua.",
+  "group": "injection",
+  "channel": "FLOW_A",
+  "requires_debug": true,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970436",
+        "account_number": "1012345678",
+        "amount_vnd": 200000,
+        "source_integrity": "VALID_VIETQR_CRC",
+        "qr_payload": "{{qr:T22}}",
+        "debug": {
+          "simulate_skip_qr_verify": true
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "stop_codes_include": [
+          "TEMPORAL_BYPASS_DETECTED_MISSING_VIETQR_CHECK"
+        ]
+      }
+    }
+  ]
+}

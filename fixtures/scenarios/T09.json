@@ -1,0 +1,25 @@
+{
+  "id": "T09",
+  "title_vi": "Biên lai chuyển khoản giả",
+  "description_vi": "Biên lai giả, đòi hoàn tiền.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Mình đã chuyển nhầm 2tr cho bạn, biên lai đây, bạn hoàn lại phần dư giúp"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_UNVERIFIED_INBOUND_RECEIPT"
+        ]
+      }
+    }
+  ]
+}

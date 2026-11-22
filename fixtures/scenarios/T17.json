@@ -1,0 +1,35 @@
+{
+  "id": "T17",
+  "title_vi": "OCR số tài khoản bị mờ",
+  "description_vi": "Số tài khoản từ OCR cần người dùng xác nhận.",
+  "group": "cold-start",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "OCR",
+          "text": "STK 1903777888999 Techcombank"
+        }
+      },
+      "expect": {
+        "decision_tier": "SOFT_FRICTION",
+        "reason_codes_include": [
+          "RC_OCR_ACCOUNT_NEEDS_CONFIRM"
+        ],
+        "stop_codes_include": [
+          "ABORT_WAIT_NAPAS_NAME_USER_CONFIRM"
+        ],
+        "assert": [
+          {
+            "path": "name_confirmation.found",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "T01",
+  "title_vi": "Giả công an / VNeID ép chuyển tiền",
+  "description_vi": "Giả công an dùng VNeID ép chuyển tiền.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Đây là Công an quận 1, tài khoản VNeID của bạn liên quan đường dây rửa tiền, chuyển 50tr vào stk 1903777888999 TCB để xác minh, không được nói với ai"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_AUTHORITY_COERCION"
+        ]
+      }
+    }
+  ]
+}

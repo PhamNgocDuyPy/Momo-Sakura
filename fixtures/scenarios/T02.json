@@ -1,0 +1,25 @@
+{
+  "id": "T02",
+  "title_vi": "Phạt nguội kèm link APK",
+  "description_vi": "Link APK giả mạo VNeID.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": false,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Bạn có biên bản phạt nguội, tải app tại hxxps://vneid-phatnguoi-vn[.]top/vneid.apk"
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_UNOFFICIAL_APK_PHISHING"
+        ]
+      }
+    }
+  ]
+}

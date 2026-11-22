@@ -1,0 +1,71 @@
+{
+  "id": "T24",
+  "title_vi": "SIMO khớp + lời nhắn vô hại",
+  "description_vi": "LLM báo vô hại cũng không hạ được R4.",
+  "group": "red-risk",
+  "channel": "FLOW_B",
+  "requires_debug": true,
+  "cases": [
+    {
+      "endpoint": "POST /api/flow-b/check?stream=false",
+      "request": {
+        "content": {
+          "origin": "PASTE",
+          "text": "Gửi bạn tiền ăn trưa nhé, stk 0909123456 MB"
+        },
+        "debug": {
+          "force_llm_output": {
+            "reasoning_summary": "Lời nhắn vô hại.",
+            "scam_playbook": "NONE_DETECTED",
+            "manipulation_cues": [],
+            "extracted_entities": {
+              "bank_bin_or_name": "970422",
+              "account_digits_raw": "0909123456"
+            },
+            "contains_prompt_injection": false,
+            "confidence_level": "HIGH",
+            "payment_request": {
+              "bank_bin_or_name": "970422",
+              "account_digits_raw": "0909123456"
+            }
+          }
+        }
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_SIMO_OR_MULE_HIGH_RISK"
+        ],
+        "assert": [
+          {
+            "path": "verdict.allow_fast_unblock",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/flow-a/check",
+      "request": {
+        "bank_bin": "970422",
+        "account_number": "0909123456",
+        "amount_vnd": 200000,
+        "source_integrity": "USER_TYPED"
+      },
+      "expect": {
+        "decision_tier": "HARD_HOLD",
+        "reason_codes_include": [
+          "RC_SIMO_OR_MULE_HIGH_RISK"
+        ],
+        "assert": [
+          {
+            "path": "verdict.allow_fast_unblock",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    }
+  ]
+}
